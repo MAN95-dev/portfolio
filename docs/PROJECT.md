@@ -24,7 +24,7 @@ The process agreed with the owner:
 | [flo-design.eu](https://www.flo-design.eu/) (Flo) | Bold graphic contrast, a strong brand colour per project, an illustrative style. |
 
 Shared traits we kept:
-- a first-person intro with a face (her illustrated avatar);
+- a first-person intro with a face (the home hero uses her photo, `assets/img/michelle-photo.webp`; the About page still uses the illustrated avatar);
 - featured case studies first;
 - one colour per project;
 - skimmable, sectioned case studies;
@@ -34,26 +34,29 @@ Note: Jane Noh also has a "Glen Pro" case study, and Michelle has a similar Glen
 Figma. If it is ever added, make its presentation clearly distinct.
 
 ## Design system (as built)
-- **Type:** Fraunces (display serif, italic used for emphasis) and Inter (body), from Google Fonts.
+- **Type:** Playfair Display for headings (emphasis is upright Playfair in pink, because Playfair italic is too script-like next to the roman) and Inter for body text at 18px, from Google Fonts. The home hero must fit above the fold (laptop and phone), so its headline is capped by viewport height.
 - **Colours:**
   - paper `#fbf8f4`, ink `#17141c`, brand pink `#e8437f` (darker pink `#b8235a` for small text on paper), lime `#dcf2bd` (matches the avatar background);
+  - hero sticker trio ("cotton candy", chosen by the owner): Psychology candy pink `#ffd6ec`, Education baby blue `#cde7ff`, Front-end dev lilac `#ebdcff`;
   - per-project colours: Slimming World red `#d3072a`, Flights Direct blue `#0069cc` (from its own design system), Group Search purple `#6a4fc9`.
+- **Navigation:** logo left, with the nav links in a pink pill (`#FF429D` at 20%) centred in the header (inspired by Ana Bolio); the current page is a white pill. No arrow on the Résumé link. The scrolling skills strip was removed at the owner's request.
+- **Buttons (chosen by the owner):** "sticker" style. Hot pink `#ff8fc7` (secondary button is white) with an ink border and a 4px offset ink shadow; they press into the shadow on hover. No arrows on buttons except "Say hello on LinkedIn".
 - **Visual language:** rounded cards, chunky "sticker" elements with a solid ink border and offset shadow, colour-tinted panels, phone mockups with drop shadows.
 - **Motion:**
   - fade-up reveals on scroll, a staggered headline rise, floating hero stickers;
-  - a scrolling skills strip, card lift on hover, a reading progress bar;
+  - a logo that pops between six hand-sign emoji (👍 ✊ 🖖 ✌️ 🤘 🤙), card lift on hover, a reading progress bar;
   - a scroll-spy table of contents, a lightbox for charts;
   - cross-page view transitions;
   - all of it disabled under `prefers-reduced-motion`.
 
 ## Site structure
 - `index.html`:
-  - hero (avatar, intro), scrolling skills strip;
+  - hero (avatar, intro);
   - featured case studies (Digital Coaching, Flights Direct, plus Group Search as "coming soon");
   - How I work, Websites I've built (CakeSheds, Developer Portfolio, The Two Dolphins, Reuseabook, At Home with Marvel), Let's connect.
-- `about.html`: portrait, intro and "What I bring". **The copy is a draft** written from the homepage intro, because the Figma About page was still template placeholder text. It shows a visible "draft copy" note that should be removed once the owner supplies or approves the text.
-- `work/digital-coaching.html`: Slimming World research into adding digital/AI coaching (brief, background, support data, cancellation survey, competitor analysis of Simple, BetterMe, Noom and WW, opportunities, concept wireframes, next steps, references).
-- `work/flights-direct.html`: personal project on the journey from comparison site to booking (objectives, competitor research, feature analysis, literature review, user flow, sketches, UI design system, the 5-step booking journey with upsell rationale, references).
+- `about/` (`about/index.html`): portrait, intro and "What I bring". **The copy is a draft** written from the homepage intro, because the Figma About page was still template placeholder text. It shows a visible "draft copy" note that should be removed once the owner supplies or approves the text.
+- `work/digital-coaching/`: Slimming World research into adding digital/AI coaching (brief, background, support data, cancellation survey, competitor analysis of Simple, BetterMe, Noom and WW, opportunities, concept wireframes, next steps, references).
+- `work/flights-direct/`: personal project on the journey from comparison site to booking (objectives, competitor research, feature analysis, literature review, user flow, sketches, UI design system, the 5-step booking journey with upsell rationale, references).
 
 ## Content sources
 - **Figma Sites file "Portfolio"** (owner's Figma account), with pages Home, /project-1 (Digital Coaching), /project-2 (Flights Direct), /project-3 (Group Search) and /about-me.

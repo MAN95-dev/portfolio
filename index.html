@@ -12,7 +12,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Inter:wght@400..700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -22,13 +22,13 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="./" aria-label="Me, Michelle and I — home">
-        <span class="logo-mark" aria-hidden="true"><em>M</em></span>
-        <span class="logo-text">Me, <em>Michelle</em> &amp; I</span>
+        <span class="logo-mark" aria-hidden="true"><span>👍🏻</span><span>✊🏻</span><span>🖖🏻</span><span>✌🏻</span><span>🤘🏻</span><span>🤙🏻</span></span>
+        <span class="logo-text">Me, <em>Michelle</em> and I</span>
       </a>
       <nav class="nav" aria-label="Main">
         <ul>
           <li><a href="./#work" aria-current="page">Work</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about/">About</a></li>
           <li><a class="ext" href="https://drive.google.com/file/d/1HH9ZvojfDDWVLUm2WqNnJV4tCJu9w1Vo/view" target="_blank" rel="noopener">Résumé<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         </ul>
       </nav>
@@ -40,35 +40,23 @@
       <div class="wrap">
         <div>
           <h1 id="hero-title">
-            <span class="line hi">Welcome to Me, Michelle and I 👋</span>
-            <span class="line">I'm a <em>UX designer</em></span>
-            <span class="line">who designs with empathy.</span>
+            <span class="line">Hi, I'm Michelle,</span>
+            <span class="line">a <span class="circled">product designer<svg class="scribble" viewBox="0 0 600 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M520 12C400 0 120 4 40 30-10 48 20 98 250 104 470 108 596 88 590 52 584 22 470 8 300 10 240 11 190 14 160 20"/></svg></span></span>
           </h1>
-          <p class="lede reveal">UX designer with a background in <strong>psychology</strong>, <strong>education</strong> &amp; <strong>front-end development</strong>. An empathetic designer, data-driven problem solver and collaborative communicator who creates intuitive, user-focused digital experiences.</p>
+          <p class="lede reveal">UX designer with a background in <strong>psychology</strong>, <strong>education</strong> &amp; <strong>front&#8209;end development</strong>. An empathetic designer, data&#8209;driven problem solver and collaborative communicator who creates intuitive, user&#8209;focused digital experiences.</p>
           <div class="hero-actions reveal" style="--d:.1s">
-            <a class="btn" href="#work">See my work <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost" href="about.html">About me</a>
+            <a class="btn" href="#work">See my work</a>
+            <a class="btn btn--ghost" href="about/">About me</a>
           </div>
         </div>
         <div class="avatar reveal" style="--d:.15s">
-          <div class="avatar-frame"><img src="assets/img/avatar.webp" width="800" height="800" alt="Hand-drawn illustration of Michelle smiling, wearing a dotted jumper."></div>
+          <div class="avatar-frame"><img src="assets/img/michelle-photo.webp" width="800" height="800" alt="Photo of Michelle smiling, wearing round glasses and a cosy scarf, with green fields and hills behind her."></div>
           <span class="sticker" aria-hidden="true">🧠 Psychology</span>
           <span class="sticker" aria-hidden="true">✏️ Education</span>
           <span class="sticker" aria-hidden="true">&lt;/&gt; Front-end dev</span>
         </div>
       </div>
     </section>
-
-    <div class="strengths" role="region" aria-label="What I do">
-      <div class="marquee">
-        <ul>
-          <li>User research</li><li>UX design</li><li>UI design</li><li>Usability testing</li><li>Competitor analysis</li><li>Prototyping</li><li>Front-end development</li>
-        </ul>
-        <ul aria-hidden="true">
-          <li>User research</li><li>UX design</li><li>UI design</li><li>Usability testing</li><li>Competitor analysis</li><li>Prototyping</li><li>Front-end development</li>
-        </ul>
-      </div>
-    </div>
 
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
@@ -81,7 +69,7 @@
           <li class="project reveal">
             <div class="project-body">
               <span class="eyebrow">Slimming World</span>
-              <h3><a href="work/digital-coaching.html">Exploring digital coaching for weight management</a></h3>
+              <h3><a href="work/digital-coaching/">Exploring digital coaching for weight management</a></h3>
               <p>Evaluating the value of adding an AI-powered coaching feature by analysing industry trends, competitor approaches and potential benefits for the online member experience.</p>
               <ul class="chips" aria-label="Disciplines">
                 <li class="chip">Research</li><li class="chip">UX design</li><li class="chip">3 weeks</li>
@@ -96,7 +84,7 @@
           <li class="project project--fd reveal">
             <div class="project-body">
               <span class="eyebrow">Personal project · Flights Direct</span>
-              <h3><a href="work/flights-direct.html">From search to booking: a seamless travel experience</a></h3>
+              <h3><a href="work/flights-direct/">From search to booking: a seamless travel experience</a></h3>
               <p>Understanding how people move from comparison sites to booking flights, and designing a simple, trustworthy journey with relevant upsell opportunities.</p>
               <ul class="chips" aria-label="Disciplines">
                 <li class="chip">Research</li><li class="chip">UX/UI design</li><li class="chip">Prototype</li>
@@ -185,7 +173,7 @@
             <ul class="chips"><li class="chip">Research</li><li class="chip">Shopify</li><li class="chip">Front-end dev</li></ul>
           </li>
           <li class="site reveal" style="--d:.16s">
-            <div class="site-media"><img src="assets/img/site-marvel.webp" width="778" height="1118" loading="lazy" alt="At Home with Marvel care company website: 'Providing person centered care' over a photo of an older woman."></div>
+            <div class="site-media"><img src="assets/img/site-marvel.webp" style="object-position: 50% 60%" width="778" height="1118" loading="lazy" alt="At Home with Marvel care company website: 'Providing person centered care' over a photo of an older woman."></div>
             <h3>At Home with Marvel</h3>
             <p>Redesigning and developing a single page website for a care company.</p>
             <ul class="chips"><li class="chip">UX/UI design</li><li class="chip">Wix</li></ul>

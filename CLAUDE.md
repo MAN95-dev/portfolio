@@ -16,8 +16,9 @@ questions) is in the project brief, imported below. Read it before making design
 
 ## How to work in this repo
 - **No framework and no build step.** Keep it plain HTML, CSS and vanilla JS unless the owner agrees otherwise. Astro is the agreed upgrade path if the number of case studies grows.
-- **Always use relative paths.** The site is served from `/portfolio/`, so a root-absolute path like `/css/...` breaks on Pages. Pages in `work/` use `../`.
-- **Header and footer are duplicated on every page.** When you change one, update it on all of them: `index.html`, `about.html` and `work/*.html`.
+- **Clean URLs:** every page is a folder with an `index.html` (`about/`, `work/<slug>/`), and links point at the folder with a trailing slash (`about/`, never `about.html`). The old `about.html` and `work/*.html` files are only redirect stubs for previously shared links; don't edit content there.
+- **Always use relative paths.** The site is served from `/portfolio/`, so a root-absolute path like `/css/...` breaks on Pages. `about/` uses `../` and `work/<slug>/` uses `../../`.
+- **Header and footer are duplicated on every page.** When you change one, update it on all of them: `index.html`, `about/index.html` and `work/*/index.html`.
 - **Design tokens** (colours, type scale, spacing) are CSS custom properties at the top of `css/styles.css`. Reuse them rather than hard-coding values. Each case study sets its colour with a body class: `.cs` is Slimming World red and `.cs--fd` is Flights Direct blue.
 - **Accessibility is a requirement, not polish:**
   - Use semantic landmarks and include the skip link.
