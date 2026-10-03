@@ -1,0 +1,34 @@
+# CLAUDE.md
+
+Portfolio website for Michelle Percy, a UX/UI designer. The brand name is "Me, Michelle & I".
+It is a plain HTML/CSS/JS static site hosted on GitHub Pages.
+
+The full brief (goals, inspiration, design decisions, content sources, current status and open
+questions) is in the project brief, imported below. Read it before making design or content changes.
+
+@docs/PROJECT.md
+
+## Quick facts
+- **Live site:** https://man95-dev.github.io/portfolio/
+- **Repo:** https://github.com/MAN95-dev/portfolio. Deploys automatically from `main`, and Pages rebuilds in about 1 minute after a push.
+- **GitHub account:** push as `MAN95-dev`. If `gh auth status` shows another active account, run `gh auth switch -u MAN95-dev`.
+- **Local preview:** run `npx http-server -p 8080 -c-1` from the repo root, then open http://localhost:8080.
+
+## How to work in this repo
+- **No framework and no build step.** Keep it plain HTML, CSS and vanilla JS unless the owner agrees otherwise. Astro is the agreed upgrade path if the number of case studies grows.
+- **Always use relative paths.** The site is served from `/portfolio/`, so a root-absolute path like `/css/...` breaks on Pages. Pages in `work/` use `../`.
+- **Header and footer are duplicated on every page.** When you change one, update it on all of them: `index.html`, `about.html` and `work/*.html`.
+- **Design tokens** (colours, type scale, spacing) are CSS custom properties at the top of `css/styles.css`. Reuse them rather than hard-coding values. Each case study sets its colour with a body class: `.cs` is Slimming World red and `.cs--fd` is Flights Direct blue.
+- **Accessibility is a requirement, not polish:**
+  - Use semantic landmarks and include the skip link.
+  - Give every image meaningful `alt` text, or `alt=""` if it's decorative. Don't invent details you haven't seen in the image.
+  - Keep visible focus styles and meet WCAG AA contrast.
+  - Add `<span class="visually-hidden"> (opens in a new tab)</span>` to `target="_blank"` links.
+  - All motion must respect `prefers-reduced-motion`.
+- **Motion** uses CSS plus `js/main.js`. Add the `.reveal` class (with optional `style="--d:.1s"` for delay) to fade elements up on scroll. Any new JS must be progressive enhancement, so the site still works with JS off.
+- **Images:**
+  - Ship only optimised `.webp` files in `assets/img/`, at most about 1800px wide (phone screens about 640px wide).
+  - Always set `width` and `height` and add `loading="lazy"` below the fold.
+  - Use `tools/optimize-images.js` to convert. Original exports go in `assets/raw/`, which is gitignored.
+- **Before pushing,** check every page at about 1440px and 390px wide: no horizontal scroll, no broken images, no console errors.
+- **Batch small edits** and push at milestones. The owner reviews on the live link or on localhost.
