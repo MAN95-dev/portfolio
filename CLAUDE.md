@@ -8,6 +8,8 @@ questions) is in the project brief, imported below. Read it before making design
 
 @docs/PROJECT.md
 
+**Start of every session:** check "Ask the owner first" under "Status and open items" in the brief. If anything is listed there, ask the owner about it before starting other work.
+
 ## Quick facts
 - **Live site:** https://man95-dev.github.io/portfolio/
 - **Repo:** https://github.com/MAN95-dev/portfolio. Deploys automatically from `main`, and Pages rebuilds in about 1 minute after a push.

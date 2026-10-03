@@ -67,6 +67,24 @@ Figma. If it is ever added, make its presentation clearly distinct.
 - **LinkedIn:** https://www.linkedin.com/in/michelle-percy-developer
 
 ## Status and open items
+
+### Ask the owner first (pending decisions, as of 2026-10-03)
+At the start of the next session, ask these before doing anything else, starting with the logo. Remove each item from this list once it's answered.
+
+1. **Logo: which option?** The owner isn't happy with the current logo, "Me, Michelle and I" in Playfair with the animated hand-sign emoji, because it doesn't fit the site's style. Mockups of the five options in the real header are in [decisions/logo-options.png](decisions/logo-options.png). The options:
+   1. **Clean name:** "Michelle Percy" in bold Inter (`700`, about 1.2rem), next to the hand signs. Closest to Ana Bolio.
+   2. **Sticker badge:** the hand signs and "Michelle Percy" inside a white pill with an ink border and a `3px 3px 0` ink shadow, like the buttons.
+   3. **Monogram:** an "MP" circle (42px, candy pink `#ffd6ec`, ink border and shadow, Playfair) with "Michelle Percy" and a small grey "Product designer" line beside it. No hand signs.
+   4. **Minimal:** "michelle." in Playfair 600 with a pink (`#e8437f`) full stop, next to the hand signs.
+   5. **Marker (Claude's recommendation):** "Michelle Percy" in Playfair 600 with a pink hand-drawn marker swoosh underneath, echoing the hero's marker loop, next to the hand signs. Option 2 is a close second.
+   6. Keep the current logo.
+
+   Any option can use "Me, Michelle and I" instead of her name. The logo markup is duplicated in the header of every page, so update all four.
+2. **"Say hello on LinkedIn →"** (contact section on the home and About pages) is the only button that still has an arrow. Remove it to match the others?
+3. **"UX designer" wording.** The hero now says "product designer", but these still say "UX designer": the first words of the hero intro paragraph, the browser tab titles (for example "Michelle Percy — UX Designer"), and the case study "Role" fields. Change them? Keep the case study roles if that was her real job title.
+4. **About page image.** The home hero uses her photo, but the About page still uses the illustrated portrait. Use the photo there too?
+5. **`assets/img/avatar.webp`** (the old illustrated avatar) is no longer used anywhere. Delete it?
+
 - **Group Search (project-3) is shown as "Case study coming soon".** Its Figma content is unfinished: placeholder text copied from Flights Direct, and images and nav copied from Digital Coaching. Build its page once real content exists, using the same template as the other case studies.
 - **Waiting on the owner for:**
   - an email address for the contact section (only LinkedIn and the résumé are linked now);
