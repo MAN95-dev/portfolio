@@ -71,6 +71,8 @@ Figma. If it is ever added, make its presentation clearly distinct.
 ### Ask the owner first (pending decisions, as of 2026-10-03)
 At the start of the next session, ask these before doing anything else, starting with the logo. Remove each item from this list once it's answered.
 
+**First check the decision page:** the owner may already have answered all of these in the "Michelle Percy Logo Picker" artifact, https://claude.ai/artifact/4BhCSBuqFDiYg2xH28RhyF. Read the answers with the `ArtifactData` tool: `action: "get"`, `collection: "decisions"`, `doc_id: "owner"`. The fields are `logo` (`marker`, `badge`, `clean`, `monogram`, `minimal` or `current`), `name` ("Michelle Percy" or "Me, Michelle and I"), `linkedinArrow` (`remove`/`keep`), `wording` (`change-all-but-roles`/`change-everywhere`/`keep`), `aboutImage` (`photo`/`illustration`), `oldAvatar` (`delete`/`keep`), `note` (free text) and `updatedAt`. If the document exists, confirm the answers with the owner and act on them. Ask only about fields that are missing.
+
 1. **Logo: which option?** The owner isn't happy with the current logo, "Me, Michelle and I" in Playfair with the animated hand-sign emoji, because it doesn't fit the site's style. Mockups of the five options in the real header are in [decisions/logo-options.png](decisions/logo-options.png). The options:
    1. **Clean name:** "Michelle Percy" in bold Inter (`700`, about 1.2rem), next to the hand signs. Closest to Ana Bolio.
    2. **Sticker badge:** the hand signs and "Michelle Percy" inside a white pill with an ink border and a `3px 3px 0` ink shadow, like the buttons.
