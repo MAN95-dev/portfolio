@@ -24,7 +24,7 @@ The process agreed with the owner:
 | [flo-design.eu](https://www.flo-design.eu/) (Flo) | Bold graphic contrast, a strong brand colour per project, an illustrative style. |
 
 Shared traits we kept:
-- a first-person intro with a face (the home hero uses her photo, `assets/img/michelle-photo.webp`; the About page still uses the illustrated avatar);
+- a first-person intro with a face (the home hero uses her photo, `assets/img/michelle-photo.webp`; the About page uses a collage of her photos);
 - featured case studies first;
 - one colour per project;
 - skimmable, sectioned case studies;
@@ -59,7 +59,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
   - hero (avatar, intro);
   - featured case studies (Digital Coaching, Flights Direct, plus Group Search as "coming soon");
   - How I work, Websites I've built (CakeSheds, Developer Portfolio, The Two Dolphins, Reuseabook, At Home with Marvel), Let's connect.
-- `about/` (`about/index.html`): portrait, intro and "What I bring". **The copy is a draft** written from the homepage intro, because the Figma About page was still template placeholder text. It shows a visible "draft copy" note that should be removed once the owner supplies or approves the text.
+- `about/` (`about/index.html`): "Hey! I'm Michelle" intro using the owner's copy from her old Wix portfolio (https://percytechnology.wixstudio.com/michellepercy/about), with "UX/UI designer" changed to "product designer". It has a line about her current role at Slimming World and a 3-photo sticker collage beside the text (a strip of 3 more photos was removed as too busy), then Let's connect with LinkedIn and Email buttons. The photos (`assets/img/about-*.webp`) come from the old site. "What I bring" was removed because it duplicated How I work on the home page.
 - `work/digital-coaching/`: Slimming World research into adding digital/AI coaching (brief, background, support data, cancellation survey, competitor analysis of Simple, BetterMe, Noom and WW, opportunities, concept wireframes, next steps, references).
 - `work/flights-direct/`: personal project on the journey from comparison site to booking (objectives, competitor research, feature analysis, literature review, user flow, sketches, UI design system, the 5-step booking journey with upsell rationale, references).
 
@@ -68,26 +68,16 @@ Figma. If it is ever added, make its presentation clearly distinct.
   - The Figma MCP connector **cannot read Sites files**.
   - Read the published preview instead: https://dish-panic-41645449.figma.site/ (append the page paths above). Extract the DOM text and download assets from `/_assets/v11/<hash>.png`.
   - Don't edit the Figma Sites file by driving the browser. It's fragile, and an earlier attempt broke layouts.
-- **Résumé:** linked to Google Drive (see the nav links).
+- **Résumé:** hosted on the site as `assets/docs/michelle-percy-resume.pdf` (it replaced the old Google Drive link on 2026-10-03). To update it, overwrite that file with the new PDF, keeping the same name so the links still work.
 - **LinkedIn:** https://www.linkedin.com/in/michelle-percy-developer
 
 ## Status and open items
 
-### Ask the owner first (pending decisions, as of 2026-10-03)
-At the start of the next session, ask these before doing anything else. Remove each item from this list once it's answered.
-
-**The owner has saved answers on the decision page (2026-10-03):** LinkedIn arrow `remove` (done), wording `change-everywhere`, About image `photo`, old avatar `delete`. Confirm and act on these. If any are still listed below, they haven't been done yet. **Previously: send the owner the decision page link** (https://claude.ai/artifact/4BhCSBuqFDiYg2xH28RhyF). They asked to be reminded and plan to make their choices there. Open it for them with the Artifact tool (`action: "open"`) and also paste the link in your first message. Then wait for them to say they've saved, and read their answers as described below.
-
-**Reading the decision page:** the owner may already have answered all of these in the "Michelle Percy Logo Picker" artifact, https://claude.ai/artifact/4BhCSBuqFDiYg2xH28RhyF. Read the answers with the `ArtifactData` tool: `action: "get"`, `collection: "decisions"`, `doc_id: "owner"`. The fields are `logo` (`marker`, `badge`, `clean`, `monogram`, `minimal` or `current`), `name` ("Michelle Percy" or "Me, Michelle and I"), `linkedinArrow` (`remove`/`keep`), `wording` (`change-all-but-roles`/`change-everywhere`/`keep`), `aboutImage` (`photo`/`illustration`), `oldAvatar` (`delete`/`keep`), `note` (free text) and `updatedAt`. If the document exists, confirm the answers with the owner and act on them. Ask only about fields that are missing.
-
-1. **"UX designer" wording.** The hero now says "product designer", but these still say "UX designer": the first words of the hero intro paragraph, the browser tab titles (for example "Michelle Percy — UX Designer"), and the case study "Role" fields. Change them? Keep the case study roles if that was her real job title.
-2. **About page image.** The home hero uses her photo, but the About page still uses the illustrated portrait. Use the photo there too?
-3. **`assets/img/avatar.webp`** (the old illustrated avatar) is no longer used anywhere. Delete it?
+### Ask the owner first
+Nothing pending. The decision page answers (logo, LinkedIn arrow, "product designer" wording, About photos, deleting the old avatar) were all applied on 2026-10-03.
 
 - **Group Search (project-3) is shown as "Case study coming soon".** Its Figma content is unfinished: placeholder text copied from Flights Direct, and images and nav copied from Digital Coaching. Build its page once real content exists, using the same template as the other case studies.
 - **Waiting on the owner for:**
-  - an email address for the contact section (only LinkedIn and the résumé are linked now);
-  - final About copy;
   - the Flights Direct Figma prototype link, to embed in a Prototype section;
   - design feedback on version 1.
 - **Not used:** the Figma About page "hobby" images, which are only colour gradients.
