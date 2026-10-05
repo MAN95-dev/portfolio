@@ -216,14 +216,14 @@ ul, ol { margin: 0; padding: 0; }
 @keyframes bob { 50% { translate: 0 -8px; } }
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 1.5rem; }
-  .avatar { order: -1; width: min(46%, 200px, 24vh); }
+  .avatar { order: -1; width: min(66%, 240px, 29vh); }
   .hero .lede { font-size: var(--step-0); margin-top: 1rem; }
   .hero-actions { margin-top: 1.4rem; }
   /* Avatar is small here, so the stickers sit out to the sides instead of over the face */
   .sticker { font-size: 0.75rem; padding: 0.35rem 0.75rem; }
-  .sticker:nth-child(2) { top: 4%; left: auto; right: 88%; }
-  .sticker:nth-child(3) { top: 40%; right: auto; left: 92%; }
-  .sticker:nth-child(4) { bottom: 2%; left: auto; right: 78%; }
+  .sticker:nth-child(2) { top: 4%; left: auto; right: 80%; }
+  .sticker:nth-child(3) { top: 40%; right: auto; left: 82%; }
+  .sticker:nth-child(4) { bottom: 2%; left: auto; right: 72%; }
 }
 
 /* Section headings ------------------------------------------------------ */
