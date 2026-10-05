@@ -274,7 +274,8 @@ ul, ol { margin: 0; padding: 0; }
 }
 @media (max-width: 860px) {
   .project, .project:nth-child(even) { grid-template-columns: 1fr; }
-  .project-media, .project:nth-child(even) .project-media { order: -1; min-height: 0; aspect-ratio: 4 / 3; }
+  /* Match the card images' own shape on phones so nothing is cropped */
+  .project-media, .project:nth-child(even) .project-media { order: -1; min-height: 0; height: auto; aspect-ratio: 1800 / 1272; }
 }
 
 /* Websites grid -------------------------------------------------------- */
