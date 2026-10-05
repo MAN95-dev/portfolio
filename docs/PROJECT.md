@@ -84,5 +84,5 @@ Nothing pending. The decision page answers (logo, LinkedIn arrow, "product desig
 
 ## Decisions log
 - **Plain HTML/CSS/JS over React/Vue.** It's a content site, so it loads faster with no build step and is cheaper to iterate on. Native CSS/JS covers the motion we need. GSAP can be added later if needed.
-- **Build locally, preview on localhost, push at milestones.** Pages rebuilds take about a minute each, so batching changes is quicker.
+- **Push after every change** (owner's request, 2026-10-05). This replaced the earlier "push at milestones" approach.
 - **Images:** the original Figma exports were 52MB; converted to WebP they total about 3.4MB.

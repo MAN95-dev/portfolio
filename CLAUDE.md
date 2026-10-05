@@ -34,4 +34,4 @@ questions) is in the project brief, imported below. Read it before making design
   - Always set `width` and `height` and add `loading="lazy"` below the fold.
   - Use `tools/optimize-images.js` to convert. Original exports go in `assets/raw/`, which is gitignored.
 - **Before pushing,** check every page at about 1440px and 390px wide: no horizontal scroll, no broken images, no console errors.
-- **Batch small edits** and push at milestones. The owner reviews on the live link or on localhost.
+- **Push after every change** (owner's request, 2026-10-05): once a change is checked, commit and push to `main` straight away without asking. Don't batch changes or wait for approval. The owner reviews on the live link. The only exception is anything risky or hard to undo, like deleting content or publishing new personal details: check with the owner first.
