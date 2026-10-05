@@ -364,7 +364,8 @@ ul, ol { margin: 0; padding: 0; }
 
 .cs-cover {
   margin-top: clamp(2rem, 5vw, 4rem); border-radius: calc(var(--radius) + 10px); background: var(--c);
-  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 3rem) 0; overflow: hidden; position: relative;
+  /* Bottom padding leaves red space under the phones (the odd ones sit 14% lower) */
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 3rem) clamp(4rem, 9vw, 7.5rem); overflow: hidden; position: relative;
 }
 .cs-cover::before {
   content: ""; position: absolute; inset: 0;
