@@ -141,7 +141,10 @@ ul, ol { margin: 0; padding: 0; }
 .nav a:hover { color: var(--ink); background: rgb(255 255 255 / 0.6); }
 .nav a[aria-current="page"] { color: var(--ink); font-weight: 700; background: var(--card); box-shadow: 0 1px 2px rgb(23 20 28 / 0.08), 0 4px 12px -4px rgb(23 20 28 / 0.15); }
 @media (max-width: 640px) {
-  .site-header .wrap { display: flex; justify-content: space-between; }
+  /* Slimmer header on phones so the hero buttons stay above the fold */
+  .site-header { --header-pad: 0.25rem; }
+  .site-header .wrap { display: flex; justify-content: space-between; min-height: calc(64px + 2 * var(--header-pad)); }
+  .site-header.is-scrolled .wrap { min-height: 64px; }
   .logo-text { display: none; }
   .nav a { padding: 0.45rem 0.8rem; font-size: 0.93rem; }
 }
@@ -215,7 +218,8 @@ ul, ol { margin: 0; padding: 0; }
 .sticker:nth-child(4) { bottom: 4%; left: -4%; background: var(--lilac); animation-delay: -4s; transform: rotate(-3deg); }
 @keyframes bob { 50% { translate: 0 -8px; } }
 @media (max-width: 860px) {
-  .hero .wrap { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero { padding-top: 1rem; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 1.25rem; }
   .avatar { order: -1; width: min(66%, 240px, 29vh); }
   .hero .lede { font-size: var(--step-0); margin-top: 1rem; }
   .hero-actions { margin-top: 1.4rem; }
