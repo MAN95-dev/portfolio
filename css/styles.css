@@ -218,9 +218,9 @@ ul, ol { margin: 0; padding: 0; }
 .sticker:nth-child(4) { bottom: 4%; left: -4%; background: var(--lilac); animation-delay: -4s; transform: rotate(-3deg); }
 @keyframes bob { 50% { translate: 0 -8px; } }
 @media (max-width: 860px) {
-  .hero { padding-top: 1rem; }
+  .hero { padding-top: 1.75rem; }
   .hero .wrap { grid-template-columns: 1fr; gap: 1.25rem; }
-  .avatar { order: -1; width: min(66%, 240px, 29vh); }
+  .avatar { order: -1; width: min(63%, 228px, 27.5vh); }
   .hero .lede { font-size: var(--step-0); margin-top: 1rem; }
   .hero-actions { margin-top: 1.4rem; }
   /* Avatar is small here, so the stickers sit out to the sides instead of over the face */
