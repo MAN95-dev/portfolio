@@ -435,14 +435,12 @@ ul, ol { margin: 0; padding: 0; }
 @media (max-width: 760px) { .split { grid-template-columns: 1fr; } }
 
 .callout {
-  padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--radius); background: var(--ink); color: var(--paper); display: grid; gap: 1rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--radius); background: var(--c-soft); color: var(--ink); display: grid; gap: 1rem;
 }
-.callout h3, .callout h4 { color: var(--paper); margin: 0; }
-/* Light text on the dark box (beats the general .cs-section p colour) */
-.cs-section .callout p { color: rgb(251 248 244 / 0.85); }
-.cs-section .callout p strong { color: var(--hot-pink); }
-.callout .bullets li { color: rgb(251 248 244 / 0.85); }
-.callout .bullets li::before { background: var(--lime-deep); }
+.callout h3, .callout h4 { color: var(--ink); margin: 0; }
+.callout .bullets li { color: var(--ink-soft); }
+.cs-section .callout p { color: var(--ink-soft); }
+.cs-section .callout p strong { color: var(--c); filter: brightness(0.85); }
 
 .figure { margin: 0; display: grid; gap: 0.75rem; }
 .figure-frame { border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); padding: clamp(0.75rem, 2vw, 1.5rem); overflow: hidden; }
