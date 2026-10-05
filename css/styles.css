@@ -438,6 +438,9 @@ ul, ol { margin: 0; padding: 0; }
   padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--radius); background: var(--ink); color: var(--paper); display: grid; gap: 1rem;
 }
 .callout h3, .callout h4 { color: var(--paper); margin: 0; }
+/* Light text on the dark box (beats the general .cs-section p colour) */
+.cs-section .callout p { color: rgb(251 248 244 / 0.85); }
+.cs-section .callout p strong { color: var(--lime-deep); }
 .callout .bullets li { color: rgb(251 248 244 / 0.85); }
 .callout .bullets li::before { background: var(--lime-deep); }
 
