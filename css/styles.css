@@ -263,6 +263,8 @@ ul, ol { margin: 0; padding: 0; }
 .project-cta .arrow { transition: transform 0.3s var(--ease); }
 .project:hover .project-cta .arrow { transform: translateX(6px); }
 .project-media { position: relative; height: 100%; min-height: 320px; overflow: hidden; }
+/* <picture> swaps in a phone-specific image; let the <img> inside fill the frame as before */
+.project-media picture { display: contents; }
 .project-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease); }
 .project:hover .project-media img { transform: scale(1.04); }
 /* No image while the case study is a work in progress, so the text spans the card */
@@ -276,6 +278,9 @@ ul, ol { margin: 0; padding: 0; }
   .project, .project:nth-child(even) { grid-template-columns: 1fr; }
   /* Match the card images' own shape on phones so nothing is cropped */
   .project-media, .project:nth-child(even) .project-media { order: -1; min-height: 0; height: auto; aspect-ratio: 1800 / 1272; }
+  /* Cards with a phone-specific image (<picture>) show the whole image at its own shape */
+  .project-media:has(picture), .project:nth-child(even) .project-media:has(picture) { aspect-ratio: auto; padding: 0.75rem 1.25rem 0; }
+  .project-media:has(picture) img { height: auto; object-fit: contain; }
 }
 
 /* Websites grid -------------------------------------------------------- */
