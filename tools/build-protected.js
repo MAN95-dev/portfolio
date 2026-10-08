@@ -20,6 +20,7 @@ const { execFileSync } = require('child_process');
 const root = path.join(__dirname, '..');
 const pages = [
   { name: 'group-search', src: 'private/group-search-full.html', out: 'work/group-search' },
+  { name: 'digital-coaching', src: 'private/digital-coaching-full.html', out: 'work/digital-coaching' },
 ];
 
 const mime = { '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml', '.gif': 'image/gif' };
