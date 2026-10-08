@@ -376,6 +376,12 @@ ul, ol { margin: 0; padding: 0; }
 .phones img:nth-child(odd) { transform: translateY(14%); }
 .phones img:nth-child(3) { transform: translateY(0); }
 .cs-cover:hover .phones img { transform: translateY(4%); }
+/* Phones: show only the middle three, larger, so none are cropped or too small to read */
+@media (max-width: 600px) {
+  .phones:has(> img:nth-child(5)) img:is(:first-child, :last-child) { display: none; }
+  .phones:has(> img:nth-child(5)) img { width: 31%; }
+  .phones:has(> img:nth-child(5)) img:is(:nth-child(2), :nth-child(4)) { transform: translateY(10%); }
+}
 
 /* Layout with sticky TOC */
 .cs-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); padding-block: clamp(3rem, 6vw, 5rem); }
