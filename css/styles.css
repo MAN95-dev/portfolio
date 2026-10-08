@@ -239,6 +239,8 @@ ul, ol { margin: 0; padding: 0; }
 
 /* Case study rows ------------------------------------------------------ */
 .projects { display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); list-style: none; }
+/* Side-by-side cards are all as tall as the tallest one (owner's request, 2026-10-08) */
+@media (min-width: 861px) { .projects { grid-auto-rows: 1fr; } }
 .project {
   /* Soft pink matches the background baked into the Digital Coaching card image */
   --c: var(--sw); --c-soft: #ffe7f4;
