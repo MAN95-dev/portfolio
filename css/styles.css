@@ -397,7 +397,8 @@ ul, ol { margin: 0; padding: 0; }
 .toc details summary { display: none; }
 @media (max-width: 960px) {
   .cs-layout { grid-template-columns: 1fr; }
-  .toc { position: sticky; top: 72px; z-index: 40; margin-inline: calc(-1 * var(--gutter)); padding: 0 var(--gutter); background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  /* Sits flush under the scrolled header (76px here, 64px on phones) so no text shows between them */
+  .toc { position: sticky; top: 76px; z-index: 40; margin-inline: calc(-1 * var(--gutter)); padding: 0 var(--gutter); background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
   .toc-title { display: none; }
   /* Clear the sticky header and the "Jump to section" bar when jumping to a section */
   html:has(.toc) { scroll-padding-top: 140px; }
@@ -409,6 +410,7 @@ ul, ol { margin: 0; padding: 0; }
   .toc details[open] summary::after { transform: rotate(45deg); }
   .toc ol { padding-bottom: 1rem; }
 }
+@media (max-width: 640px) { .toc { top: 64px; } }
 @media (min-width: 961px) { .toc details > :not(summary) { display: block; } }
 
 /* Case study content */
