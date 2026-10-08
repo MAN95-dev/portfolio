@@ -33,5 +33,11 @@ questions) is in the project brief, imported below. Read it before making design
   - Ship only optimised `.webp` files in `assets/img/`, at most about 1800px wide (phone screens about 640px wide).
   - Always set `width` and `height` and add `loading="lazy"` below the fold.
   - Use `tools/optimize-images.js` to convert. Original exports go in `assets/raw/`, which is gitignored.
+- **Password-protected case studies:**
+  - Edit the readable source in `private/` (e.g. `private/group-search-full.html`), never the scrambled output in `work/*/full/`.
+  - Then run `node tools/build-protected.js` to re-encrypt, and commit the output.
+  - `private/` is gitignored and only exists on the owner's Mac. Never commit it or paste its contents anywhere public, because the repo is public.
+  - The password is in `private/<name>-password.txt`. Images that must be protected go in `private/img/`, and the build embeds them into the encrypted page.
+  - Keep `tools/staticrypt.json` (the salt) unchanged.
 - **Before pushing,** check every page at about 1440px and 390px wide: no horizontal scroll, no broken images, no console errors.
 - **Push after every change** (owner's request, 2026-10-05): once a change is checked, commit and push to `main` straight away without asking. Don't batch changes or wait for approval. The owner reviews on the live link. The only exception is anything risky or hard to undo, like deleting content or publishing new personal details: check with the owner first.
