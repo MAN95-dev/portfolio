@@ -26,8 +26,6 @@
   --sw-soft: #fde8ea;
   --fd: #0069cc;          /* Flights Direct blue (from its design system) */
   --fd-soft: #e5eeff;
-  --gs: #6a4fc9;          /* Group search */
-  --gs-soft: #efeafd;
 
   --accent: var(--pink);
   --accent-ink: var(--pink-ink);
@@ -252,7 +250,6 @@ ul, ol { margin: 0; padding: 0; }
 .project:nth-child(even) { grid-template-columns: 1.15fr 1fr; }
 .project:nth-child(even) .project-media { order: -1; }
 .project--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
-.project--gs { --c: var(--gs); --c-soft: var(--gs-soft); }
 .project:has(a:hover), .project:focus-within { translate: 0 -6px; box-shadow: var(--shadow-lg); }
 .project-body { padding: clamp(1.75rem, 4vw, 3.5rem); display: grid; gap: 1.1rem; align-content: center; }
 .project .eyebrow { color: var(--c); filter: brightness(0.85); }
@@ -347,7 +344,6 @@ ul, ol { margin: 0; padding: 0; }
    ========================================================================== */
 .cs { --c: var(--sw); --c-soft: var(--sw-soft); }
 .cs--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
-.cs--gs { --c: var(--gs); --c-soft: var(--gs-soft); }
 .cs .eyebrow { color: var(--c); filter: brightness(0.85); }
 
 .progress { position: fixed; inset: 0 0 auto; height: 4px; z-index: 60; transform-origin: 0 50%; transform: scaleX(0); background: var(--c); }
