@@ -60,6 +60,34 @@ if (toc) {
   }
 }
 
+// Booking step screen recordings: play only while on screen, with a pause button (WCAG 2.2.2).
+// With reduced motion they stay paused on their poster until the viewer presses play.
+const stepVideos = document.querySelectorAll('.step-video video');
+stepVideos.forEach((video) => {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'video-toggle';
+  video.parentElement.appendChild(btn);
+  let userPaused = reduceMotion;
+  const sync = () => {
+    const playing = !video.paused;
+    btn.textContent = playing ? '❚❚' : '▶';
+    btn.setAttribute('aria-label', playing ? 'Pause screen recording' : 'Play screen recording');
+  };
+  btn.addEventListener('click', () => {
+    if (video.paused) { userPaused = false; video.play(); } else { userPaused = true; video.pause(); }
+  });
+  video.addEventListener('play', sync);
+  video.addEventListener('pause', sync);
+  sync();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !userPaused) video.play().catch(() => {});
+      else if (!e.isIntersecting) video.pause();
+    }, { threshold: 0.4 }).observe(video);
+  }
+});
+
 // Lightbox for charts and diagrams
 const zooms = document.querySelectorAll('[data-zoom]');
 if (zooms.length && 'HTMLDialogElement' in window) {

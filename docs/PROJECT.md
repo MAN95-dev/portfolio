@@ -61,7 +61,8 @@ Figma. If it is ever added, make its presentation clearly distinct.
   - How I work, Websites I've built (CakeSheds, Developer Portfolio, The Two Dolphins, Reuseabook, At Home with Marvel), Let's connect.
 - `about/` (`about/index.html`): "Hey! I'm Michelle" intro using the owner's copy from her old Wix portfolio (https://percytechnology.wixstudio.com/michellepercy/about), with "UX/UI designer" changed to "product designer". It has a line about her current role at Slimming World and a 3-photo sticker collage beside the text (a strip of 3 more photos was removed as too busy), then Let's connect with LinkedIn and Email buttons. The photos (`assets/img/about-*.webp`) come from the old site. "What I bring" was removed because it duplicated How I work on the home page.
 - `work/digital-coaching/`: Slimming World research into adding digital/AI coaching (brief, background, support data, cancellation survey, competitor analysis of Simple, BetterMe, Noom and WW, opportunities, concept wireframes, next steps, references).
-- `work/flights-direct/`: personal project on the journey from comparison site to booking (objectives, competitor research, feature analysis, literature review, user flow, sketches, UI design system, the 5-step booking journey with upsell rationale, references).
+- `work/flights-direct/`: personal project on the journey from comparison site to booking (objectives; one Research section holding competitor research, feature analysis and literature review; user flow, sketches, UI design system, the 5-step booking journey with upsell rationale, the embedded Figma prototype, references).
+  - Each booking step shows a muted, looping screen recording (`assets/video/fd-step-N.mp4`, with a `-poster.webp`) from the Figma site's `/_videos/v1/<hash>` files. They were cropped to the phone, scaled to 460px wide and compressed to H.264 (27MB of .mov became 1.6MB). They play only while on screen, have a pause button, and stay paused under reduced motion.
 
 ## Content sources
 - **Figma Sites file "Portfolio"** (owner's Figma account), with pages Home, /project-1 (Digital Coaching), /project-2 (Flights Direct), /project-3 (Group Search) and /about-me.
@@ -78,7 +79,6 @@ Nothing pending. The decision page answers (logo, LinkedIn arrow, "product desig
 
 - **Group Search (project-3) is shown as "Case study coming soon".** Its Figma content is unfinished: placeholder text copied from Flights Direct, and images and nav copied from Digital Coaching. Build its page once real content exists, using the same template as the other case studies.
 - **Waiting on the owner for:**
-  - the Flights Direct Figma prototype link, to embed in a Prototype section;
   - design feedback on version 1.
 - **Not used:** the Figma About page "hobby" images, which are only colour gradients.
 
