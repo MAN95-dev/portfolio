@@ -469,48 +469,6 @@ ul, ol { margin: 0; padding: 0; }
 .data-table td { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
 .data-table tbody tr:last-child > * { border-bottom: 0; }
 
-/* Raw research tables: one row of results per person, with their notes on a full-width line underneath */
-.data-table--raw { min-width: 640px; font-size: 0.9rem; }
-.data-table--raw th, .data-table--raw td { padding: 0.7rem 0.75rem 0.25rem; vertical-align: top; }
-.data-table--raw thead th { white-space: normal; vertical-align: bottom; line-height: 1.3; padding-bottom: 0.7rem; }
-.data-table--raw tbody th, .data-table--raw tbody td { border-bottom: 0; white-space: nowrap; }
-.data-table--raw td { font-weight: 500; }
-.data-table--raw .note-row td { padding: 0 0.75rem 0.8rem; padding-left: calc(0.75rem + 2.4em); border-bottom: 1px solid var(--line); white-space: normal; font-weight: 400; color: var(--ink-soft); }
-.data-table--raw tbody tr.is-search { background: color-mix(in srgb, var(--c-soft) 70%, transparent); }
-.data-table--raw tfoot > * > * { padding: 0.8rem 0.75rem; border-top: 2px solid var(--ink); border-bottom: 0; font-weight: 700; white-space: nowrap; }
-
-/* Phones: each recording becomes a small card of label/value pairs */
-@media (max-width: 640px) {
-  .data-table--raw { min-width: 0; }
-  .data-table--raw, .data-table--raw tbody, .data-table--raw tfoot, .data-table--raw tr, .data-table--raw th, .data-table--raw td { display: block; }
-  .data-table--raw thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .data-table--raw tr:not(.note-row) { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1rem; padding: 0.9rem 0.25rem 0.5rem; }
-  .data-table--raw :is(tbody, tfoot) tr > th { grid-column: 1 / -1; padding: 0; font-weight: 700; }
-  .data-table--raw tbody tr > th::before { content: "Recording "; }
-  .data-table--raw :is(tbody, tfoot) td { padding: 0; white-space: normal; border: 0; }
-  .data-table--raw td[data-label]::before { content: attr(data-label); display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-  .data-table--raw .note-row td { padding: 0.25rem 0.25rem 0.9rem; }
-  .data-table--raw tfoot tr { border-top: 2px solid var(--ink); }
-  .data-table--raw tfoot > * > * { border-top: 0; }
-}
-
-/* min-width: 0 lets wide tables scroll inside their frame instead of widening the page */
-.tabs, .tab-panel, .cs-sub { min-width: 0; }
-.tab-list { display: none; }
-.js .tab-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
-.js .tab-panel-title { display: none; }
-.tab-panel + .tab-panel { margin-top: 1.5rem; }
-.js .tab-panel + .tab-panel { margin-top: 0; }
-.js .tab-panel[hidden] { display: none; }
-.tab-panel-title { margin-bottom: 0.75rem; }
-.tab {
-  font: inherit; font-weight: 600; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 999px; cursor: pointer;
-  background: var(--card); color: var(--ink-soft); border: 1.5px solid var(--line);
-}
-.tab:hover { color: var(--ink); border-color: var(--ink); }
-.tab[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.tab:focus-visible { outline: 3px solid var(--c); outline-offset: 2px; }
-
 /* User story quotes with the ideas they led to */
 .stories { display: grid; gap: 1rem; list-style: none; counter-reset: story; }
 .stories > li { counter-increment: story; padding: clamp(1.4rem, 3vw, 2rem); border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); display: grid; gap: 1rem; }
