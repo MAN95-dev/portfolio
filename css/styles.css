@@ -376,10 +376,6 @@ ul, ol { margin: 0; padding: 0; }
 .phones img:nth-child(odd) { transform: translateY(14%); }
 .phones img:nth-child(3) { transform: translateY(0); }
 .cs-cover:hover .phones img { transform: translateY(4%); }
-/* Three-phone covers: bigger phones, with the middle one raised */
-.phones:not(:has(> img:nth-child(4))) img { width: clamp(90px, 25%, 260px); }
-.phones:not(:has(> img:nth-child(4))) img:nth-child(3) { transform: translateY(14%); }
-.cs-cover:hover .phones:not(:has(> img:nth-child(4))) img { transform: translateY(4%); }
 /* Phones: show only the middle three, larger, so none are cropped or too small to read */
 @media (max-width: 600px) {
   .phones:has(> img:nth-child(5)) img:is(:first-child, :last-child) { display: none; }
