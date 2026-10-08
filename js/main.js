@@ -97,6 +97,31 @@ if (protoFrame) {
   wide.addEventListener('change', load);
 }
 
+// Tabs: arrow keys move between tabs (WAI-ARIA tabs pattern)
+document.querySelectorAll('[data-tabs]').forEach((tabs) => {
+  const tabEls = [...tabs.querySelectorAll('[role="tab"]')];
+  const select = (tab) => {
+    tabEls.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  };
+  tabEls.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', (e) => {
+      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabEls.length - 1 }[e.key];
+      if (next === undefined) return;
+      e.preventDefault();
+      const target = tabEls[(next + tabEls.length) % tabEls.length];
+      target.focus();
+      select(target);
+    });
+  });
+  select(tabEls.find((t) => t.getAttribute('aria-selected') === 'true') || tabEls[0]);
+});
+
 // Lightbox for charts and diagrams
 const zooms = document.querySelectorAll('[data-zoom]');
 if (zooms.length && 'HTMLDialogElement' in window) {
