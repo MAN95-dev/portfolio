@@ -508,7 +508,6 @@ ul, ol { margin: 0; padding: 0; }
 /* The Figma embed renders badly on phones, so they (and no-JS visitors) get a card that opens it in Figma instead */
 .proto-card { display: grid; justify-items: center; gap: 1.25rem; padding: 2rem 1.25rem; border-radius: var(--radius); background: var(--c-soft); text-align: center; }
 .proto-card img { width: min(55%, 220px); border-radius: 15.5% / 7.4%; filter: drop-shadow(0 16px 22px rgb(23 20 28 / 0.22)); }
-.cs-section .proto-card p { margin: -0.5rem 0 0; font-size: 0.9rem; color: var(--muted); }
 .proto-frame, a.proto-link { display: none; }
 @media (min-width: 641px) {
   .js .proto-frame { display: block; }
