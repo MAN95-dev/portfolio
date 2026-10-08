@@ -88,6 +88,15 @@ stepVideos.forEach((video) => {
   }
 });
 
+// Figma prototype: only load the embed on screens wide enough to show it well
+const protoFrame = document.querySelector('.proto-frame iframe[data-src]');
+if (protoFrame) {
+  const wide = window.matchMedia('(min-width: 641px)');
+  const load = () => { if (wide.matches && !protoFrame.src) { protoFrame.loading = 'lazy'; protoFrame.src = protoFrame.dataset.src; } };
+  load();
+  wide.addEventListener('change', load);
+}
+
 // Lightbox for charts and diagrams
 const zooms = document.querySelectorAll('[data-zoom]');
 if (zooms.length && 'HTMLDialogElement' in window) {

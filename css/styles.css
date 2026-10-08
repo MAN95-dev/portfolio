@@ -505,7 +505,17 @@ ul, ol { margin: 0; padding: 0; }
 .video-toggle:hover { transform: translate(1px, 1px); box-shadow: 1px 1px 0 var(--ink); }
 .proto-frame { border-radius: var(--radius); overflow: hidden; background: var(--c-soft); }
 .proto-frame iframe { display: block; width: 100%; height: min(85vh, 860px); border: 0; }
-@media (max-width: 640px) { .step-video { width: 60%; margin-inline: auto; } .proto-frame iframe { height: 75vh; } }
+/* The Figma embed renders badly on phones, so they (and no-JS visitors) get a card that opens it in Figma instead */
+.proto-card { display: grid; justify-items: center; gap: 1.25rem; padding: 2rem 1.25rem; border-radius: var(--radius); background: var(--c-soft); text-align: center; }
+.proto-card img { width: min(55%, 220px); border-radius: 15.5% / 7.4%; filter: drop-shadow(0 16px 22px rgb(23 20 28 / 0.22)); }
+.cs-section .proto-card p { margin: -0.5rem 0 0; font-size: 0.9rem; color: var(--muted); }
+.proto-frame, a.proto-link { display: none; }
+@media (min-width: 641px) {
+  .js .proto-frame { display: block; }
+  .js a.proto-link { display: inline-flex; }
+  .js .proto-card { display: none; }
+}
+@media (max-width: 640px) { .step-video { width: 60%; margin-inline: auto; } }
 @media (max-width: 640px) { .step { grid-template-columns: 1fr; } .step img { width: 60%; margin-inline: auto; } }
 
 .text-link { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; color: var(--c); filter: brightness(0.85); text-underline-offset: 4px; }
