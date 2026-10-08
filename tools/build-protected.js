@@ -19,7 +19,7 @@ const { execFileSync } = require('child_process');
 
 const root = path.join(__dirname, '..');
 const pages = [
-  { name: 'group-search', src: 'private/group-search-full.html', out: 'work/group-search/full' },
+  { name: 'group-search', src: 'private/group-search-full.html', out: 'work/group-search' },
 ];
 
 const mime = { '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml', '.gif': 'image/gif' };
@@ -48,7 +48,7 @@ for (const page of pages) {
     '--short',
     '-t', 'tools/password-template.html',
     '--remember', '30',
-    '--template-title', 'Group Search: full case study',
+    '--template-title', 'Group Search case study',
     '--template-instructions', "This case study includes confidential Slimming World data, so it's password protected. Enter the password I sent you.",
     '--template-placeholder', 'Password',
     '--template-button', 'Read the case study',

@@ -34,7 +34,7 @@ questions) is in the project brief, imported below. Read it before making design
   - Always set `width` and `height` and add `loading="lazy"` below the fold.
   - Use `tools/optimize-images.js` to convert. Original exports go in `assets/raw/`, which is gitignored.
 - **Password-protected case studies:**
-  - Edit the readable source in `private/` (e.g. `private/group-search-full.html`), never the scrambled output in `work/*/full/`.
+  - Edit the readable source in `private/` (e.g. `private/group-search-full.html`), never the scrambled output it builds (e.g. `work/group-search/index.html`).
   - Then run `node tools/build-protected.js` to re-encrypt, and commit the output.
   - `private/` is gitignored and only exists on the owner's Mac. Never commit it or paste its contents anywhere public, because the repo is public.
   - The password is in `private/<name>-password.txt`. Images that must be protected go in `private/img/`, and the build embeds them into the encrypted page.

@@ -453,13 +453,6 @@ ul, ol { margin: 0; padding: 0; }
 .panel .panel-stat { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c); filter: brightness(0.85); }
 .panel .bullets strong { color: var(--ink); }
 
-/* Password-protected full case study teaser */
-.locked { display: grid; gap: 1rem; justify-items: start; padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--radius); background: var(--c-soft); }
-.locked-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--card); color: var(--c); border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); }
-.cs-section .locked p { color: var(--ink); }
-.locked p a { color: var(--c); filter: brightness(0.85); font-weight: 600; text-underline-offset: 3px; }
-.locked .btn { margin-top: 0.5rem; }
-
 /* Assumption → finding cards with a big stat */
 .assumptions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1rem; list-style: none; }
 .assumptions li { padding: 1.5rem; border-radius: var(--radius-sm); background: var(--c-soft); display: grid; gap: 0.4rem; align-content: start; }
