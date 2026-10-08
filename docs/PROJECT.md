@@ -77,7 +77,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
 ### Ask the owner first
 Nothing pending. The decision page answers (logo, LinkedIn arrow, "product designer" wording, About photos, deleting the old avatar) were all applied on 2026-10-03.
 
-- **Group Search (project-3) is shown as "Case study coming soon".** Its Figma content is unfinished: placeholder text copied from Flights Direct, and images and nav copied from Digital Coaching. Build its page once real content exists, using the same template as the other case studies.
+- **Group Search (project-3) is shown as "Case study coming soon".** Its home card has an image (2026-10-08): three of the owner's Slimming World group search screens (list view, map view, group page) in phone frames, as `home-group-search.webp` (laptop, lavender background baked in) and `home-group-search-mobile.webp` (phones, transparent). They were rendered from `assets/raw/gs/compose.html` (gitignored, local only) and narrowed so no phone is cropped down to about 1100px wide. Its Figma content is unfinished: placeholder text copied from Flights Direct, and images and nav copied from Digital Coaching. Build its page once real content exists, using the same template as the other case studies.
 - **Waiting on the owner for:**
   - design feedback on version 1.
 - **Not used:** the Figma About page "hobby" images, which are only colour gradients.
