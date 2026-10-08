@@ -67,7 +67,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
 ## Content sources
 - **Figma Sites file "Portfolio"** (owner's Figma account), with pages Home, /project-1 (Digital Coaching), /project-2 (Flights Direct), /project-3 (Group Search) and /about-me.
   - The Figma MCP connector **cannot read Sites files**.
-  - Read the published preview instead: https://dish-panic-41645449.figma.site/ (append the page paths above). Extract the DOM text and download assets from `/_assets/v11/<hash>.png`.
+  - Read the published preview instead: https://dish-panic-41645449.figma.site/ (append the page paths above). Extract the DOM text and download assets from `/_assets/v11/<hash>.png`. Also check each page for `<video>` elements (served from `/_videos/v1/<hash>`) and `<iframe>` embeds such as Figma prototypes. The first build missed the Flights Direct videos and prototype because only images were extracted.
   - Don't edit the Figma Sites file by driving the browser. It's fragile, and an earlier attempt broke layouts.
 - **Résumé:** hosted on the site as `assets/docs/michelle-percy-resume.pdf` (it replaced the old Google Drive link on 2026-10-03). To update it, overwrite that file with the new PDF, keeping the same name so the links still work.
 - **LinkedIn:** https://www.linkedin.com/in/michelle-percy-developer
