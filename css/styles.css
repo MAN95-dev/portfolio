@@ -467,6 +467,11 @@ ul, ol { margin: 0; padding: 0; }
 .gallery:has(> li:nth-child(2):last-child) li { flex: 0 1 210px; min-width: 0; }
 .gallery:has(> li:nth-child(2):last-child) img { width: 100%; }
 @media (max-width: 560px) { .gallery { padding: 1.25rem; } }
+/* Competitor screens sit on a muted tint of each app's own brand colour */
+.gallery--simple { background: #ece8fd; }
+.gallery--betterme { background: #fbe3e5; }
+.gallery--noom { background: #ffe6dc; }
+.gallery--ww { background: #e2e5f6; }
 
 .app-head { display: flex; gap: 1rem; align-items: center; }
 .app-head img { width: 56px; height: 56px; object-fit: contain; border-radius: 14px; background: var(--card); border: 1px solid var(--line); padding: 6px; }
