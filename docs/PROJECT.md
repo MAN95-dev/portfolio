@@ -57,7 +57,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
 ## Site structure
 - `index.html`:
   - hero (avatar, intro);
-  - featured case studies (Digital Coaching, Flights Direct, and Group Search, which is password protected);
+  - featured case studies, in this order (owner's request, 2026-10-10): Group Search (password protected), Flights Direct, Digital Coaching. "Next case study" links loop Group Search → Flights Direct → Digital Coaching → Group Search;
   - How I work, Websites I've built (CakeSheds, Developer Portfolio, The Two Dolphins, Reuseabook, At Home with Marvel), Let's connect.
 - `about/` (`about/index.html`): "Hey! I'm Michelle" intro using the owner's copy from her old Wix portfolio (https://percytechnology.wixstudio.com/michellepercy/about), with "UX/UI designer" changed to "product designer". It has a line about her current role at Slimming World and a 3-photo sticker collage beside the text (a strip of 3 more photos was removed as too busy), then Let's connect with LinkedIn and Email buttons. The photos (`assets/img/about-*.webp`) come from the old site. "What I bring" was removed because it duplicated How I work on the home page.
 - `work/digital-coaching/`: Slimming World research into adding digital/AI coaching (brief, background, support data, cancellation survey, competitor analysis of Simple, BetterMe, Noom and WW, opportunities, concept wireframes, next steps, references).
