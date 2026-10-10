@@ -668,6 +668,7 @@ ul, ol { margin: 0; padding: 0; }
 .win { display: grid; gap: 0.35rem; align-content: start; padding: 1.25rem 1.4rem; border-radius: var(--radius-sm); background: rgb(255 255 255 / 0.12); }
 .win-big { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.6rem, 2rem + 2.4vw, 3.8rem); line-height: 1; }
 .win-label { font-weight: 600; }
+.win-note { font-size: 0.85rem; line-height: 1.45; opacity: 0.9; }
 .win-bars { display: grid; gap: 4px; margin-top: 0.75rem; }
 .win-bar { display: flex; justify-content: space-between; gap: 0.5rem; align-items: center; min-width: 0; font-size: 0.8rem; }
 .win-bar::before { content: ""; order: 0; flex: 0 0 var(--w); height: 10px; border-radius: 0 4px 4px 0; }
