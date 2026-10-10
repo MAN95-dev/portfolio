@@ -493,6 +493,14 @@ ul, ol { margin: 0; padding: 0; }
 .storyboards img { width: 100%; aspect-ratio: 5 / 3.2; object-fit: contain; border-radius: 0; }
 .storyboards span { font-weight: 600; color: var(--ink); }
 @media (max-width: 760px) { .storyboards { grid-template-columns: 1fr; } }
+.wires { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem); }
+.wires li { display: grid; gap: 0.35rem; align-content: start; }
+.wires .zoom { margin-bottom: 0.6rem; border-radius: 22px; overflow: hidden; border: 6px solid var(--ink); background: #fff; box-shadow: 0 18px 30px rgb(23 20 28 / 0.14); }
+.wires img { width: 100%; }
+.wires strong { color: var(--ink); }
+.wires span { color: var(--ink-soft); }
+.wires .wire-story { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c); filter: brightness(0.85); }
+@media (max-width: 760px) { .wires { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .zoom { display: block; position: relative; cursor: zoom-in; border: 0; padding: 0; background: none; width: 100%; text-align: left; }
 .zoom::after {
   content: "⤢ Enlarge"; position: absolute; right: 0.75rem; bottom: 0.75rem; padding: 0.3rem 0.7rem; border-radius: 999px;
