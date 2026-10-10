@@ -612,13 +612,13 @@ ul, ol { margin: 0; padding: 0; }
 .step--text { grid-template-columns: 1fr; }
 .step-phones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
 .step-phones img { width: 100%; filter: drop-shadow(0 14px 20px rgb(23 20 28 / 0.2)); }
-.step--pair .step-cols { grid-template-columns: 1fr; gap: 1.25rem; }
+.step--pair .step-cols { grid-template-columns: 1fr; gap: 2rem; }
 .step > img { justify-self: center; width: 100%; max-width: 220px; }
 .cs-section .step h3 { margin: 0 0 1.25rem; }
-.step-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 2rem; }
+.step-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 2.5rem; }
 .step-col { min-width: 0; }
 .cs-section .step-col h4 { margin: 0 0 0.7rem; font-family: var(--font-body); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c); filter: brightness(0.85); }
-.step-col .bullets { gap: 0.55rem; font-size: 0.95rem; line-height: 1.5; }
+.step-col .bullets { gap: 0.3rem; font-size: 0.95rem; line-height: 1.45; }
 @media (max-width: 960px) { .step-cols { grid-template-columns: 1fr; } }
 .step img { filter: drop-shadow(0 16px 22px rgb(23 20 28 / 0.22)); }
 .step h3 { margin: 0 0 0.75rem; }
