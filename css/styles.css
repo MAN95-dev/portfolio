@@ -735,8 +735,9 @@ ul, ol { margin: 0; padding: 0; }
 .about-photos figure:nth-child(2) { rotate: 2deg; }
 .about-photos figure:nth-child(3) { rotate: -1deg; }
 .about-photos img { width: 100%; height: 100%; object-fit: cover; }
-.about-photos figure:first-child img { object-position: 35% 50%; }
-.about-photos figure:nth-child(3) img { object-position: 68% 50%; }
+.about-photos figure:first-child img { object-position: 50% 40%; }
+.about-photos figure:nth-child(2) img { object-position: 75% 35%; }
+.about-photos figure:nth-child(3) img { object-position: 50% 30%; }
 .about-photos figure:hover { rotate: 0deg; }
 
 @media (max-width: 860px) {
