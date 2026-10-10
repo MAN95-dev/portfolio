@@ -438,6 +438,20 @@ ul, ol { margin: 0; padding: 0; }
 .cards li strong { color: var(--ink); font-size: 1.05rem; }
 .cards .num { font-family: var(--font-display); font-style: italic; font-size: var(--step-2); color: var(--c); line-height: 1; }
 .cards--tint li { background: var(--c-soft); border-color: transparent; }
+.cards--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 760px) { .cards--2 { grid-template-columns: 1fr; } }
+
+/* Flow: numbered steps joined by arrows (stacks on phones) */
+.flow { list-style: none; counter-reset: flow; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.75rem; }
+.flow li { counter-increment: flow; position: relative; padding: 1.1rem; border-radius: var(--radius-sm); background: var(--c-soft); display: grid; gap: 0.4rem; align-content: start; color: var(--ink-soft); font-size: 0.95rem; }
+.flow li::before { content: counter(flow); font-family: var(--font-display); font-style: italic; font-size: var(--step-1); color: var(--c); line-height: 1; }
+.flow li strong { color: var(--ink); }
+.flow li:not(:last-child)::after { content: "→"; position: absolute; right: -1.35rem; top: 50%; translate: 0 -50%; color: var(--c); font-weight: 700; }
+.flow-note { margin-top: 1rem; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 960px) {
+  .flow { grid-template-columns: 1fr; gap: 1.5rem; }
+  .flow li:not(:last-child)::after { content: "↓"; right: auto; left: 1.4rem; top: auto; bottom: -1.45rem; translate: 0; }
+}
 
 .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 .panel { padding: clamp(1.4rem, 3vw, 2rem); border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); display: grid; gap: 1rem; align-content: start; }
