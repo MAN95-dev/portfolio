@@ -482,6 +482,14 @@ ul, ol { margin: 0; padding: 0; }
 .data-table tbody th { font-weight: 500; color: var(--ink); }
 .data-table td { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
 .data-table tbody tr:last-child > * { border-bottom: 0; }
+.hypo-table { min-width: 680px; }
+.hypo-table tbody th, .hypo-table td { vertical-align: top; }
+.hypo-table td:last-child { font-weight: 400; color: var(--ink-soft); }
+.hypo-table th:first-child { width: 36%; }
+.verdict { display: inline-flex; gap: 0.35rem; align-items: center; white-space: nowrap; padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700; }
+.verdict--yes { background: #e3f4e8; color: #1d6b37; }
+.verdict--part { background: #fdf0d6; color: #8a5300; }
+.verdict--no { background: #ececf0; color: #45404d; }
 
 /* User story quotes with the ideas they led to */
 .stories { display: grid; gap: 1rem; list-style: none; counter-reset: story; }
