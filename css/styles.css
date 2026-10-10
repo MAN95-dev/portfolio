@@ -471,6 +471,8 @@ ul, ol { margin: 0; padding: 0; }
 .assumptions .assume { font-size: 0.9rem; font-style: italic; color: var(--ink-soft); }
 .assumptions .stat { font-family: var(--font-display); font-size: clamp(2.6rem, 2rem + 2vw, 3.4rem); line-height: 1.05; color: var(--c); margin-top: 0.4rem; }
 .cs-section .assumptions p { color: var(--ink); }
+.assumptions--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { .assumptions--3 { grid-template-columns: 1fr; } }
 
 /* Data table */
 .scroll-table { overflow-x: auto; }
