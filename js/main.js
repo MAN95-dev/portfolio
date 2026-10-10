@@ -117,3 +117,31 @@ if (zooms.length && 'HTMLDialogElement' in window) {
   }));
 }
 
+
+// Tabs (e.g. Mobile web / App / Desktop). Without JS every panel shows, each with its own heading.
+document.querySelectorAll('[data-tabs]').forEach((box) => {
+  const list = box.querySelector('[role="tablist"]');
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls')));
+  const select = (index, focus) => {
+    tabs.forEach((tab, i) => {
+      const on = i === index;
+      tab.setAttribute('aria-selected', String(on));
+      tab.tabIndex = on ? 0 : -1;
+      panels[i].hidden = !on;
+    });
+    if (focus) tabs[index].focus();
+  };
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => select(i));
+    tab.addEventListener('keydown', (e) => {
+      const next = { ArrowRight: (i + 1) % tabs.length, ArrowLeft: (i - 1 + tabs.length) % tabs.length, Home: 0, End: tabs.length - 1 }[e.key];
+      if (next === undefined) return;
+      e.preventDefault();
+      select(next, true);
+    });
+  });
+  list.hidden = false;
+  box.classList.add('tabs-ready');
+  select(0);
+});
