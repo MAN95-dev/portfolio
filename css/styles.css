@@ -517,6 +517,9 @@ ul, ol { margin: 0; padding: 0; }
 .desktops { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem); }
 .desktops li { display: grid; gap: 0.35rem; align-content: start; }
 .desktops li:first-child { grid-column: 1 / -1; }
+.desktops--pair li:first-child { grid-column: auto; }
+.cover-credit { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--muted); }
+.cover-credit a { color: inherit; text-underline-offset: 3px; }
 .desktops .zoom { margin-bottom: 0.6rem; }
 .desktops img { width: 100%; filter: drop-shadow(0 18px 24px rgb(23 20 28 / 0.12)); }
 .desktops strong { color: var(--ink); }
