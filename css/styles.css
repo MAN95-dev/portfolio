@@ -486,6 +486,24 @@ ul, ol { margin: 0; padding: 0; }
 .hypo-table tbody th, .hypo-table td { vertical-align: top; }
 .hypo-table td:last-child { font-weight: 400; color: var(--ink-soft); }
 .hypo-table th:first-child { width: 36%; }
+.figure-frame.scroll-table { overflow-x: auto; }
+/* On small screens each row becomes its own card, with the column name beside each value */
+@media (max-width: 760px) {
+  .data-table--stack { min-width: 0; }
+  .data-table--stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .data-table--stack, .data-table--stack tbody, .data-table--stack tr, .data-table--stack th, .data-table--stack td { display: block; width: auto; }
+  .data-table--stack tbody tr { padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
+  .data-table--stack tbody tr:first-child { padding-top: 0; }
+  .data-table--stack tbody tr:last-child { padding-bottom: 0; border-bottom: 0; }
+  .data-table--stack th, .data-table--stack td { padding: 0.2rem 0; border: 0; }
+  .data-table--stack tbody th { margin-bottom: 0.3rem; font-weight: 700; }
+  .data-table--stack td[data-label] { display: flex; justify-content: space-between; gap: 1rem; }
+  .data-table--stack td[data-label]::before { content: attr(data-label); font-weight: 400; color: var(--muted); }
+  .hypo-table th:first-child { width: auto; }
+  .hypo-table td.hypo-verdict { padding: 0.15rem 0 0.4rem; }
+  .hypo-table td[data-label] { display: block; }
+  .hypo-table td[data-label]::before { display: block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+}
 .verdict { display: inline-flex; gap: 0.35rem; align-items: center; white-space: nowrap; padding: 0.25rem 0.65rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700; }
 .verdict--yes { background: #e3f4e8; color: #1d6b37; }
 .verdict--part { background: #fdf0d6; color: #8a5300; }

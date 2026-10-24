@@ -46,6 +46,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
 - **Navigation:** logo left, with the nav links in a pink pill (`#FF429D` at 20%) centred in the header (inspired by Ana Bolio); the current page is a white pill. No arrow on the Résumé link. The scrolling skills strip was removed at the owner's request.
 - **No site footer** (removed at the owner's request, 2026-10-03). The Let's connect section is the end of the home and About pages.
 - **Buttons (chosen by the owner):** "sticker" style. Hot pink `#ff8fc7` (secondary button is white) with an ink border and a 4px offset ink shadow; they press into the shadow on hover. No arrows on any buttons.
+- **Tables** (`.data-table`, 2026-10-24): add `data-table--stack` and a `data-label` on each `td` so that below 760px each row becomes its own block, with the column name beside each value (the hypotheses table shows "What we found" as a small heading). Sideways scrolling was cut off on phones because `.figure-frame` set `overflow: hidden`.
 - **Visual language:** rounded cards, chunky "sticker" elements with a solid ink border and offset shadow, colour-tinted panels, phone mockups with drop shadows.
 - **Motion:**
   - fade-up reveals on scroll, a staggered headline rise, floating hero stickers;
