@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Tracker: a workout log for the middle of a set — Michelle Percy</title>
+  <meta name="description" content="Side project: designing a mobile app for logging weights and runs, built around big, glanceable numbers and targets that update themselves each week.">
+  <meta name="theme-color" content="#fbf8f4">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Inter:wght@400..700&display=swap">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/main.js" defer></script>
+</head>
+<body class="cs cs--gym">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../../" aria-label="Michelle Percy, UX designer — home">
+        <span class="logo-mark" aria-hidden="true">MP</span>
+        <span class="logo-text"><span class="logo-name">Michelle Percy</span><span class="logo-role">UX designer</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="../../#work" aria-current="page">Work</a></li>
+          <li><a href="../../about/">About</a></li>
+          <li><a class="ext" href="../../assets/docs/michelle-percy-resume.pdf" target="_blank" rel="noopener">Résumé<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="cs-hero">
+      <div class="wrap">
+        <a class="back" href="../../#work"><span aria-hidden="true">←</span> All work</a>
+        <span class="eyebrow">Side project</span>
+        <h1>Gym Tracker: a workout log designed for the middle of a set</h1>
+        <p class="lede">A personal design challenge: a mobile app for logging weights and runs that you can use between sets, with big numbers, few taps and targets that update themselves each week.</p>
+        <dl class="meta">
+          <div><dt>Project type</dt><dd>Personal design challenge</dd></div>
+          <div><dt>Role</dt><dd>UX/UI Designer</dd></div>
+          <div><dt>Platform</dt><dd>Mobile app concept</dd></div>
+          <div><dt>Screens</dt><dd>11</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+        </dl>
+        <div class="cs-cover reveal">
+          <div class="phones">
+            <img src="../../assets/img/gym-program.webp" width="720" height="1526" alt="My week screen: a weekly plan mixing workouts and runs, one row per day.">
+            <img src="../../assets/img/gym-main.webp" width="720" height="1526" alt="Today screen: Monday's quads workout with four exercises and their targets, and a Start workout button.">
+            <img src="../../assets/img/gym-set.webp" width="720" height="1526" alt="Active set screen: leg press, set 2 of 4, with the target of 12 reps at 140 kg in very large numbers and Missed and Done buttons.">
+            <img src="../../assets/img/gym-summary.webp" width="720" height="1526" alt="Workout done screen: next Monday's targets, with arrows showing which ones go up.">
+            <img src="../../assets/img/gym-history.webp" width="720" height="1526" alt="Progress screen: a line chart of machine fly weight rising over eight weeks, and lists of lifts and runs.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap cs-layout">
+      <nav class="toc" aria-label="Jump to section">
+        <details open>
+          <summary>Jump to section</summary>
+          <p class="toc-title">Jump to section</p>
+          <ol>
+            <li><a href="#challenge">The challenge</a></li>
+            <li><a href="#principles">Design principles</a></li>
+            <li><a href="#gym">At the gym</a></li>
+            <li><a href="#track">Set up and track</a></li>
+            <li><a href="#programs">Programs and archive</a></li>
+            <li><a href="#visual">Visual design</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <div class="cs-body">
+        <section class="cs-section reveal" id="challenge" aria-labelledby="challenge-h">
+          <h2 id="challenge-h"><span class="n">01 — The challenge</span>Designing for the gym floor</h2>
+          <p class="big-statement">Design a workout tracker you can use <mark>mid-session</mark>, with tired hands and a few seconds between sets, for both lifting and running.</p>
+          <p>This was a self-initiated project to practise app design outside work. Most of the time you spend in a gym app is the moment between sets: you glance at the phone, log what you did and get on with the next set. So I designed the whole app around that moment, then built the planning and progress screens around it.</p>
+        </section>
+
+        <section class="cs-section reveal" id="principles" aria-labelledby="principles-h">
+          <h2 id="principles-h"><span class="n">02 — Approach</span>Design principles</h2>
+          <ul class="cards cards--tint">
+            <li><strong>Readable at a glance</strong>The current set fills the screen: reps and weight in very large numbers, so you can read them from arm's length.</li>
+            <li><strong>One tap when it goes to plan</strong>Hit your target and you just press Done. Only a missed set asks for more: what you actually got.</li>
+            <li><strong>Progress built in</strong>Each exercise has a rep range. Hit the top of it and next week's weight goes up 2.5&nbsp;kg; otherwise the target goes up a rep, or stays the same after a missed set.</li>
+            <li><strong>Lifting and running together</strong>Workouts and runs share one weekly plan and one progress screen, colour coded so they're easy to tell apart.</li>
+            <li><strong>Big targets</strong>The main buttons are 72 to 84 pixels tall and every control is at least 44 pixels, so they're easy to hit mid-workout.</li>
+          </ul>
+        </section>
+
+        <section class="cs-section reveal" id="gym" aria-labelledby="gym-h">
+          <h2 id="gym-h"><span class="n">03 — Screens</span>At the gym</h2>
+          <p>The core loop: see today's workout, log each set, and finish with next week's targets already worked out.</p>
+          <ul class="wires wires--4">
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-main.webp" width="720" height="1526" loading="lazy" alt="Today screen: Monday, week 6, quads. Four exercises, each with its sets, rep range and target, a Start workout button and a Do a different day button."></button>
+              <strong>Today</strong>
+              <span>Today's workout and each exercise's target, one tap to start.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-set.webp" width="720" height="1526" loading="lazy" alt="Active set screen: leg press, exercise 1 of 4, set 2 of 4. The target of 12 reps at 140 kg fills the middle of the screen, with last week's result above and large Missed and Done buttons below."></button>
+              <strong>Active set</strong>
+              <span>The target fills the screen. Done is the big button; Missed sits beside it.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-missed.webp" width="720" height="1526" loading="lazy" alt="Missed set sheet: What did you get? Plus and minus steppers for reps and weight, showing 10 reps at 140 kg, and a Save set button."></button>
+              <strong>Missed set</strong>
+              <span>Large plus and minus steppers to record what you actually lifted.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-summary.webp" width="720" height="1526" loading="lazy" alt="Workout done screen: quads done, 14 sets in 52 minutes. Next Monday's targets for each exercise, with up arrows for increases and a note on the missed calf raise keeping the same target."></button>
+              <strong>Workout done</strong>
+              <span>Next week's targets, already updated, and why each one changed.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="cs-section reveal" id="track" aria-labelledby="track-h">
+          <h2 id="track-h"><span class="n">04 — Screens</span>Set up and track</h2>
+          <p>Planning the week, editing workouts, logging runs and seeing progress over time.</p>
+          <ul class="wires wires--4">
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-program.webp" width="720" height="1526" loading="lazy" alt="My week screen: autumn block, week 10 of 12. One row per day with workout tags in lime and run tags in blue, and an empty Sunday to add a workout or run."></button>
+              <strong>Weekly program</strong>
+              <span>The whole week at a glance. Tap a day to change it.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-edit.webp" width="720" height="1526" loading="lazy" alt="Edit workout screen for Wednesday's hamstrings: three exercises that can be reordered, and an Add exercise form with name, sets, minimum and maximum reps and weight."></button>
+              <strong>Edit workout</strong>
+              <span>Add exercises with a set count, rep range and starting weight.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-run.webp" width="720" height="1526" loading="lazy" alt="Log a run screen: threshold, long or easy, distance 6 km, time 28:30 and pace 4:45 per km, compared with the last threshold run, and a blue Save run button."></button>
+              <strong>Log a run</strong>
+              <span>Fill in any two of distance, time and pace, and the app works out the third.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-history.webp" width="720" height="1526" loading="lazy" alt="Progress screen: a line chart of machine fly rising from 30 kg to 45 kg over eight weeks, then lifts and runs with arrows showing whether each went up, down or stayed the same."></button>
+              <strong>Progress</strong>
+              <span>A chart for each lift, and arrows showing what's going up.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="cs-section reveal" id="programs" aria-labelledby="programs-h">
+          <h2 id="programs-h"><span class="n">05 — Screens</span>Programs and archive</h2>
+          <p>Training runs in blocks of a few weeks. When one ends, it's archived with everything you logged, and the next can start from where you left off.</p>
+          <ul class="wires">
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-programs.webp" width="720" height="1526" loading="lazy" alt="Programs screen: the current autumn block at week 10 of 12 with a progress bar, a New program button and a list of archived summer, spring and winter blocks."></button>
+              <strong>Programs</strong>
+              <span>The current block and how far through it you are.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-new-program.webp" width="720" height="1526" loading="lazy" alt="New program screen: a name, a length of 6, 8, 10 or 12 weeks, and the option to start blank or copy a previous program's workouts, latest weights and runs."></button>
+              <strong>New program</strong>
+              <span>Start fresh, or copy a previous block with its latest weights.</span>
+            </li>
+            <li>
+              <button class="zoom" type="button" data-zoom><img src="../../assets/img/gym-archive.webp" width="720" height="1526" loading="lazy" alt="Archive screen on the Exercises tab: a bar chart of the best leg press set in each of four programs, rising from 110 to 145 kg, and a table comparing a year ago with now."></button>
+              <strong>Archive</strong>
+              <span>Compare blocks over the year, or search any exercise or run.</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="cs-section reveal" id="visual" aria-labelledby="visual-h">
+          <h2 id="visual-h"><span class="n">06 — Visual design</span>Dark, bold and colour coded</h2>
+          <p>A dark interface with one bright accent for each kind of activity. Numbers use Barlow Condensed, a tall, narrow typeface that keeps big figures readable without taking up the whole screen, with Barlow for everything else.</p>
+          <ul class="swatches">
+            <li><span class="swatch" style="--s: #0e0f11" aria-hidden="true"></span><strong>Background</strong>#0E0F11</li>
+            <li><span class="swatch" style="--s: #c6f432" aria-hidden="true"></span><strong>Lime: lifting</strong>#C6F432</li>
+            <li><span class="swatch" style="--s: #6cbcff" aria-hidden="true"></span><strong>Blue: running</strong>#6CBCFF</li>
+            <li><span class="swatch" style="--s: #ff8a3d" aria-hidden="true"></span><strong>Orange: missed</strong>#FF8A3D</li>
+          </ul>
+        </section>
+
+        <a class="next reveal" href="../group-search/" style="--next-c: var(--sw)">
+          <span>Next case study →</span>
+          <strong>Researching and designing a new group search experience</strong>
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
