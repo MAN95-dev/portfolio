@@ -350,6 +350,7 @@ ul, ol { margin: 0; padding: 0; }
 .cs--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
 .cs--gym { --c: var(--gym); --c-soft: var(--gym-soft); }
 .cs--gym .cs-cover::before { background: radial-gradient(60% 80% at 20% 0%, color-mix(in srgb, var(--gym-lime) 22%, transparent), transparent 60%); }
+.cs--gym .big-statement mark { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--gym-lime) 70%, transparent) 60%); }
 /* Colour swatches (Gym Tracker visual design) */
 .swatches { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 1rem; }
 .swatches li { display: grid; gap: 0.2rem; align-content: start; color: var(--ink-soft); font-size: 0.95rem; }
