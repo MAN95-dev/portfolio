@@ -28,7 +28,7 @@ Shared traits we kept:
 - featured case studies first;
 - one colour per project;
 - skimmable, sectioned case studies;
-- simple navigation (Work, About, Résumé).
+- simple navigation (Work, About, Resume).
 
 Note: Jane Noh also has a "Glen Pro" case study, and Michelle has a similar Glen Pro project in
 Figma. If it is ever added, make its presentation clearly distinct.
@@ -43,7 +43,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
   - per-project colours: Slimming World red `#d3072a`, Flights Direct blue `#0069cc` (from its own design system). Group Search is also a Slimming World project, so it uses the same red and pink as Digital Coaching (owner's request, 2026-10-08; it replaced a purple).
 - **Logo (chosen by the owner, 2026-10-03):** monogram. An "MP" circle (42px, candy pink, Playfair, ink border and `3px 3px 0` ink shadow that presses in on hover) beside "Michelle Percy" in bold Inter and a grey "Product designer" line. On phones only the circle shows. The favicon (`favicon.png`, 96px) and `apple-touch-icon.png` (180px, on paper) are the same MP circle, rendered with Playfair. It replaced "Me, Michelle and I" with the animated hand-sign emoji.
 - **Header:** roomy at the top of the page (`--header-pad`, about 2vh above and below the nav), and it shrinks to 76px once you scroll.
-- **Navigation:** logo left, with the nav links in a soft neutral pill (ink at 6%; it was pink `#FF429D` at 20% until 2026-10-31, toned down so pink stays an accent) centred in the header (inspired by Ana Bolio); the current page is a white pill. No arrow on the Résumé link. The scrolling skills strip was removed at the owner's request.
+- **Navigation:** logo left, with the nav links in a soft neutral pill (ink at 6%; it was pink `#FF429D` at 20% until 2026-10-31, toned down so pink stays an accent) centred in the header (inspired by Ana Bolio); the current page is a white pill. No arrow on the Resume link. The scrolling skills strip was removed at the owner's request.
 - **No site footer** (removed at the owner's request, 2026-10-03). The Let's connect section is the end of the home and About pages.
 - **Buttons (chosen by the owner):** "sticker" style that presses into its shadow on hover. Since 2026-10-31 (to look less playful and more senior) the primary button is ink with white text and a 4px hot pink `#ff8fc7` offset shadow; the secondary button is white with an ink shadow and a soft pink hover. No arrows on any buttons.
 - **Tables** (`.data-table`, 2026-10-24): add `data-table--stack` and a `data-label` on each `td` so that below 760px each row becomes its own block, with the column name beside each value (the hypotheses table shows "What we found" as a small heading). Sideways scrolling was cut off on phones because `.figure-frame` set `overflow: hidden`.
@@ -81,7 +81,7 @@ Figma. If it is ever added, make its presentation clearly distinct.
   - The Figma MCP connector **cannot read Sites files**.
   - Read the published preview instead: https://dish-panic-41645449.figma.site/ (append the page paths above). Extract the DOM text and download assets from `/_assets/v11/<hash>.png`. Also check each page for `<video>` elements (served from `/_videos/v1/<hash>`) and `<iframe>` embeds such as Figma prototypes. The first build missed the Flights Direct videos and prototype because only images were extracted.
   - Don't edit the Figma Sites file by driving the browser. It's fragile, and an earlier attempt broke layouts.
-- **Résumé:** hosted on the site as `assets/docs/michelle-percy-resume.pdf` (it replaced the old Google Drive link on 2026-10-03). To update it, overwrite that file with the new PDF, keeping the same name so the links still work.
+- **Resume:** always spelt "Resume" without accents on the site (owner's request, 2026-10-31). Hosted on the site as `assets/docs/michelle-percy-resume.pdf` (it replaced the old Google Drive link on 2026-10-03). To update it, overwrite that file with the new PDF, keeping the same name so the links still work.
 - **LinkedIn:** https://www.linkedin.com/in/michelle-percy-developer
 
 ## Status and open items
