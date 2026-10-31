@@ -133,7 +133,7 @@ ul, ol { margin: 0; padding: 0; }
 
 .nav ul {
   display: flex; gap: 0.15rem; list-style: none; padding: 0.3rem; border-radius: 999px;
-  background: rgb(255 66 157 / 0.2); /* #FF429D at 20% */
+  background: rgb(23 20 28 / 0.06); /* soft neutral pill; was #FF429D at 20% until 2026-10-31 */
 }
 .nav a {
   display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none; font-weight: 500; font-size: 0.97rem;
@@ -151,18 +151,19 @@ ul, ol { margin: 0; padding: 0; }
 }
 
 /* Buttons & chips ------------------------------------------------------ */
-/* "Sticker" buttons: hot pink with a chunky ink shadow, matching the hero stickers; they press into the shadow on hover */
+/* "Sticker" buttons: ink with a pink offset shadow, so pink stays an accent (2026-10-31); they press into the shadow on hover */
 .btn {
   display: inline-flex; align-items: center; gap: 0.6rem; min-height: 48px;
   padding: 0.8rem 1.4rem; border-radius: 999px; border: 1.5px solid var(--ink);
-  background: var(--hot-pink); color: var(--ink); font-size: 1.125rem; font-weight: 600; text-decoration: none; cursor: pointer;
-  box-shadow: 4px 4px 0 var(--ink);
+  background: var(--ink); color: #fff; font-size: 1.125rem; font-weight: 600; text-decoration: none; cursor: pointer;
+  box-shadow: 4px 4px 0 var(--hot-pink);
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s;
 }
-.btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
-.btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--ink); }
-.btn--ghost { background: var(--card); }
-.btn--ghost:hover { background: var(--candy-pink); }
+.btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hot-pink); }
+.btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--hot-pink); }
+.btn--ghost { background: var(--card); color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.btn--ghost:hover { background: var(--pink-soft); box-shadow: 2px 2px 0 var(--ink); }
+.btn--ghost:active { box-shadow: 0 0 0 var(--ink); }
 .btn .arrow { transition: transform 0.25s var(--ease); }
 .btn:hover .arrow { transform: translateX(4px); }
 
