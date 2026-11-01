@@ -500,15 +500,14 @@ ul, ol { margin: 0; padding: 0; }
 .team-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
 .team-chips li { padding: 0.45rem 0.9rem; border-radius: 999px; background: var(--c-soft); color: var(--ink); font-weight: 600; font-size: 0.9rem; }
 
-/* Case study overview, after Nicole Roberts' layout (2026-11-01): intro and goals beside a details list,
+/* Case study overview, after Nicole Roberts' layout (2026-11-01): intro, a row of project details,
    then business and user need boxes, the problem to solve, and the headline results */
-.overview { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
-.overview-text { display: grid; gap: 1rem; }
-.goals { padding-left: 1.25rem; display: grid; gap: 0.5rem; color: var(--ink-soft); max-width: 60ch; }
-.meta-list { margin: 0; display: grid; border-top: 1px solid var(--line); }
-.meta-list div { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1rem; padding: 0.8rem 0; border-bottom: 1px solid var(--line); }
-.meta-list dt { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-top: 0.15rem; }
-.meta-list dd { margin: 0; font-size: 0.95rem; color: var(--ink); }
+.cs-section .overview-intro { font-size: 1.125rem; line-height: 1.65; color: var(--ink); max-width: 62ch; }
+/* Project details as one row, each label above its value */
+.meta-list { margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.25rem 1.5rem; padding-block: 1.25rem; border-block: 1px solid var(--line); }
+.meta-list div { display: grid; gap: 0.3rem; align-content: start; }
+.meta-list dt { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.meta-list dd { margin: 0; font-size: 0.92rem; line-height: 1.45; color: var(--ink); }
 .needs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .need { padding: 1.25rem 1.4rem; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); display: grid; gap: 0.4rem; align-content: start; }
 .need-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
@@ -516,9 +515,10 @@ ul, ol { margin: 0; padding: 0; }
 .problem { display: grid; gap: 0.6rem; padding: clamp(1.4rem, 3vw, 2rem); border-radius: var(--radius); background: var(--c-soft); }
 .problem .big-statement { max-width: 36ch !important; }
 .glance-stats--row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 960px) { .meta-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 760px) {
-  .overview, .needs, .glance-stats--row { grid-template-columns: 1fr; }
-  .meta-list div { grid-template-columns: 1fr; gap: 0.2rem; }
+  .needs, .glance-stats--row { grid-template-columns: 1fr; }
+  .meta-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 /* Text beside a pair of screens */
 .media-row { display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: clamp(1.25rem, 4vw, 2.5rem); align-items: center; }
