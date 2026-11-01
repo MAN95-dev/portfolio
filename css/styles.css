@@ -520,11 +520,6 @@ ul, ol { margin: 0; padding: 0; }
   .needs, .glance-stats--row { grid-template-columns: 1fr; }
   .meta-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-/* Text beside a pair of screens */
-.media-row { display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: clamp(1.25rem, 4vw, 2.5rem); align-items: center; }
-.media-text { display: grid; gap: 1rem; }
-.cs-section .media-text h3 { margin: 0; }
-@media (max-width: 640px) { .media-row { grid-template-columns: 1fr; } .media-row .step-phones { max-width: 320px; width: 100%; justify-self: center; } }
 /* Research themes: a big figure with one line of evidence */
 .themes { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .themes li { display: grid; gap: 0.35rem; align-content: start; padding: 1.25rem 1.4rem; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); color: var(--ink-soft); }
