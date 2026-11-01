@@ -531,6 +531,11 @@ ul, ol { margin: 0; padding: 0; }
 .theme-stat { font-family: var(--font-display); font-size: clamp(2rem, 1.6rem + 1.4vw, 2.6rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: var(--c); }
 @media (max-width: 760px) { .themes { grid-template-columns: 1fr; } }
 .stories p { color: var(--ink-soft); }
+/* All seven user stories, two to a row on wider screens */
+.stories--grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stories--grid > li { align-content: start; }
+.stories--grid blockquote { font-size: 1.1rem; }
+@media (max-width: 760px) { .stories--grid { grid-template-columns: 1fr; } }
 
 /* At a glance summary under the cover */
 .glance { display: grid; gap: 1.25rem; margin-top: clamp(1.5rem, 4vw, 2.5rem); padding: clamp(1.4rem, 3.5vw, 2.5rem); border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
