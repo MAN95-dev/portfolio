@@ -25,8 +25,10 @@
   --gym: #16181b;         /* Gym Tracker: the app's near-black, with its lime as the soft tint */
   --gym-soft: #eef8d2;
   --gym-lime: #c6f432;
-  --cake: #c22b5c;        /* CakeSheds: a deep raspberry for text and accents, with the site's header pink as the tint */
-  --cake-soft: #ffe6eb;
+  /* CakeSheds brand colours (owner's request): mint and pink. Both are light, so text on them stays dark */
+  --cake: #7ed7c1;        /* mint */
+  --cake-pink: #ffb6c1;   /* pink */
+  --cake-soft: #ffe6eb;   /* the site's header pink, for tints */
 
   --accent: var(--pink);
   --accent-ink: var(--pink-ink);
@@ -215,7 +217,7 @@ ul, ol { margin: 0; padding: 0; }
 .project:nth-child(even) .project-media { order: -1; }
 .project--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
 .project--gym { --c: var(--gym); --c-soft: var(--gym-soft); }
-.project--cake { --c: var(--cake); --c-soft: var(--cake-soft); }
+.project--cake { --c: var(--cake); --c-soft: var(--cake-pink); }
 .project:hover { box-shadow: var(--shadow); }
 .project-body { padding: clamp(1.75rem, 4vw, 3.25rem); display: grid; gap: 1.1rem; align-content: center; }
 .project h3 { font-family: var(--font-display); font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.1rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1.1; }
@@ -280,6 +282,17 @@ ul, ol { margin: 0; padding: 0; }
 .cs--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
 .cs--gym { --c: var(--gym); --c-soft: var(--gym-soft); }
 .cs--cake { --c: var(--cake); --c-soft: var(--cake-soft); }
+/* Mint and pink are too light for small text or white text, so on CakeSheds: labels and links stay ink,
+   the cover is pink, and coloured panels carry ink text */
+.cs--cake :is(.eyebrow, .cs-section > h2 .n, .text-link) { color: var(--ink); filter: none; }
+.cs--cake .text-link { text-decoration-color: var(--cake); text-decoration-thickness: 2px; }
+.cs--cake .cs-cover { background: var(--cake-pink); }
+.cs--cake .cs-cover::before { background: radial-gradient(60% 80% at 20% 0%, rgb(255 255 255 / 0.35), transparent 60%); }
+.cs--cake :is(.wins, .glance-stats li) { color: var(--ink); }
+.cs--cake .cs-section .wins p { color: var(--ink); }
+.cs--cake .big-statement mark { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--cake) 55%, transparent) 60%); }
+.cs--cake .theme-stat { color: var(--ink); }
+.next--light { color: var(--ink); }
 .cs--gym .cs-cover::before { background: radial-gradient(60% 80% at 20% 0%, color-mix(in srgb, var(--gym-lime) 22%, transparent), transparent 60%); }
 .cs--gym .big-statement mark { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--gym-lime) 70%, transparent) 60%); }
 /* Colour swatches (Gym Tracker visual design) */
