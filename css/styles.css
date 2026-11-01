@@ -25,6 +25,8 @@
   --gym: #16181b;         /* Gym Tracker: the app's near-black, with its lime as the soft tint */
   --gym-soft: #eef8d2;
   --gym-lime: #c6f432;
+  --cake: #c22b5c;        /* CakeSheds: a deep raspberry for text and accents, with the site's header pink as the tint */
+  --cake-soft: #ffe6eb;
 
   --accent: var(--pink);
   --accent-ink: var(--pink-ink);
@@ -213,6 +215,7 @@ ul, ol { margin: 0; padding: 0; }
 .project:nth-child(even) .project-media { order: -1; }
 .project--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
 .project--gym { --c: var(--gym); --c-soft: var(--gym-soft); }
+.project--cake { --c: var(--cake); --c-soft: var(--cake-soft); }
 .project:hover { box-shadow: var(--shadow); }
 .project-body { padding: clamp(1.75rem, 4vw, 3.25rem); display: grid; gap: 1.1rem; align-content: center; }
 .project h3 { font-family: var(--font-display); font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.1rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1.1; }
@@ -276,6 +279,7 @@ ul, ol { margin: 0; padding: 0; }
 .cs { --c: var(--sw); --c-soft: var(--sw-soft); }
 .cs--fd { --c: var(--fd); --c-soft: var(--fd-soft); }
 .cs--gym { --c: var(--gym); --c-soft: var(--gym-soft); }
+.cs--cake { --c: var(--cake); --c-soft: var(--cake-soft); }
 .cs--gym .cs-cover::before { background: radial-gradient(60% 80% at 20% 0%, color-mix(in srgb, var(--gym-lime) 22%, transparent), transparent 60%); }
 .cs--gym .big-statement mark { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--gym-lime) 70%, transparent) 60%); }
 /* Colour swatches (Gym Tracker visual design) */
@@ -526,6 +530,12 @@ ul, ol { margin: 0; padding: 0; }
 .theme-stat { font-family: var(--font-display); font-size: clamp(2rem, 1.6rem + 1.4vw, 2.6rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1; color: var(--c); }
 @media (max-width: 760px) { .themes { grid-template-columns: 1fr; } }
 .stories p { color: var(--ink-soft); }
+.theme-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
+/* A quote pulled from press or research, with its source */
+.pull-quote { margin: 0; padding: 0.25rem 0 0.25rem 1.5rem; border-left: 3px solid var(--c); display: grid; gap: 0.6rem; }
+.cs-section .pull-quote p { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; line-height: 1.4; letter-spacing: -0.015em; color: var(--ink); max-width: 46ch; }
+.pull-quote cite { font-style: normal; font-size: 0.9rem; color: var(--muted); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; }
 /* All seven user stories, two to a row on wider screens */
 .stories--grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .stories--grid > li { align-content: start; }
