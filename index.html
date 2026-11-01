@@ -8,12 +8,12 @@
   <meta property="og:title" content="Michelle Percy — UX Designer">
   <meta property="og:description" content="Empathetic designer, data-driven problem solver and collaborative communicator.">
   <meta property="og:image" content="assets/img/home-sw-coaching.webp">
-  <meta name="theme-color" content="#fbf8f4">
+  <meta name="theme-color" content="#fafaf8">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Inter:wght@400..700&family=Playfair:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..700&family=Inter:wght@400..700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -39,22 +39,14 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
-        <div>
-          <h1 id="hero-title">
-            <span class="line">Hi, I'm Michelle,</span>
-            <span class="line">a <span class="circled">UX designer<svg class="scribble" viewBox="0 0 600 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M520 12C400 0 120 4 40 30-10 48 20 98 250 104 470 108 596 88 590 52 584 22 470 8 300 10 240 11 190 14 160 20"/></svg></span></span>
-          </h1>
-          <p class="lede reveal"><strong>Psychology</strong> taught me why people behave the way they do. <strong>Front&#8209;end development</strong> taught me what&rsquo;s realistic to build. I put both to work at Slimming World, where my group search redesign has had <strong>245% more group page visits</strong> since launch.</p>
-          <div class="hero-actions reveal" style="--d:.1s">
-            <a class="btn" href="#work">See my work</a>
-            <a class="btn btn--ghost" href="about/">About me</a>
-          </div>
-        </div>
-        <div class="avatar reveal" style="--d:.15s">
-          <div class="avatar-frame"><img src="assets/img/michelle-photo.webp" width="800" height="800" alt="Photo of Michelle smiling, wearing round glasses and a cosy scarf, with green fields and hills behind her."></div>
-          <span class="sticker" aria-hidden="true">Psychology</span>
-          <span class="sticker" aria-hidden="true">Education</span>
-          <span class="sticker" aria-hidden="true">&lt;/&gt; Front-end dev</span>
+        <h1 id="hero-title">
+          <span class="line">I turn research into</span>
+          <span class="line">products people use.</span>
+        </h1>
+        <p class="lede reveal">I&rsquo;m a UX designer at Slimming World with a background in <strong>psychology</strong> and <strong>front&#8209;end development</strong>. My group search redesign has driven <strong>245% more group page visits</strong> since launch.</p>
+        <div class="hero-actions reveal" style="--d:.1s">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn btn--ghost" href="about/">About me</a>
         </div>
       </div>
     </section>
@@ -62,7 +54,7 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <div class="section-head reveal">
-          <h2 id="work-title">Featured <em>case studies</em></h2>
+          <h2 id="work-title">Selected work</h2>
         </div>
 
         <ul class="projects">
@@ -71,75 +63,93 @@
               <span class="eyebrow">Slimming World · Live since September 2026</span>
               <h3><a href="work/group-search/">Redesigning how people find a Slimming World group</a></h3>
               <p>I led the UX from research and workshops through usability testing to launch, across mobile web, app and desktop.</p>
-              <ul class="project-stats" aria-label="Results, year on year">
-                <li><strong>+245%</strong> group page visits</li>
-                <li><strong>+683%</strong> town or city searches</li>
-              </ul>
               <ul class="chips" aria-label="Disciplines">
                 <li class="chip">Research</li><li class="chip">UX design</li><li class="chip">Usability testing</li>
               </ul>
-              <span class="project-cta" aria-hidden="true">Read case study <span class="arrow">→</span></span>
+              <ul class="project-stats" aria-label="Results, year on year">
+                <li><strong>+245%</strong> Group page visits</li>
+                <li><strong>+683%</strong> Town or city searches</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn" href="work/group-search/">View case study<span class="visually-hidden">: group search</span></a>
+                <a class="btn btn--ghost" href="https://www.slimmingworld.co.uk/nearest-group-search" target="_blank" rel="noopener">View live<span class="visually-hidden">: Slimming World group search (opens in a new tab)</span></a>
+              </div>
             </div>
-            <div class="project-media">
+            <a class="project-media" href="work/group-search/" tabindex="-1" aria-hidden="true">
               <picture>
                 <source media="(max-width: 860px)" srcset="assets/img/home-group-search-mobile.webp" width="1200" height="1170">
-                <img src="assets/img/home-group-search.webp" width="1800" height="1272" loading="lazy" alt="Three Slimming World phone screens showing group search results as a list and on a map, and a group's page.">
+                <img src="assets/img/home-group-search.webp" width="1800" height="1272" loading="lazy" alt="">
               </picture>
-            </div>
+            </a>
           </li>
 
           <li class="project project--fd reveal">
             <div class="project-body">
               <span class="eyebrow">Personal project</span>
               <h3><a href="work/flights-direct/">From search to booking: a seamless travel experience</a></h3>
-              <p>Five competitor sites and research on airline upselling, turned into a five-step mobile booking journey with upsells that feel relevant, plus a clickable prototype.</p>
+              <p>Competitor research and a literature review on airline upselling, turned into a mobile booking journey with upsells that feel relevant.</p>
               <ul class="chips" aria-label="Disciplines">
-                <li class="chip">Research</li><li class="chip">UX/UI design</li>
+                <li class="chip">Research</li><li class="chip">UX/UI design</li><li class="chip">Prototyping</li>
               </ul>
-              <span class="project-cta" aria-hidden="true">Read case study <span class="arrow">→</span></span>
+              <ul class="project-stats" aria-label="Project facts">
+                <li><strong>5</strong> Competitor sites reviewed</li>
+                <li><strong>5</strong> Booking steps designed</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn" href="work/flights-direct/">View case study<span class="visually-hidden">: Flights Direct</span></a>
+                <a class="btn btn--ghost" href="https://www.figma.com/proto/TvHLe639fBsFeT84hYbion/Flights-Direct?node-id=28-544&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=5%3A213&amp;starting-point-node-id=75%3A943" target="_blank" rel="noopener">View prototype<span class="visually-hidden">: Flights Direct in Figma (opens in a new tab)</span></a>
+              </div>
             </div>
-            <div class="project-media">
+            <a class="project-media" href="work/flights-direct/" tabindex="-1" aria-hidden="true">
               <picture>
                 <source media="(max-width: 860px)" srcset="assets/img/home-flights-mobile.webp" width="1200" height="1195">
-                <img src="assets/img/home-flights.webp" width="1800" height="1272" loading="lazy" alt="Three Flights Direct phone screens showing flight details, baggage allowance and seat selection.">
+                <img src="assets/img/home-flights.webp" width="1800" height="1272" loading="lazy" alt="">
               </picture>
-            </div>
+            </a>
           </li>
 
           <li class="project project--sw reveal">
             <div class="project-body">
-              <span class="eyebrow">Slimming World</span>
+              <span class="eyebrow">Slimming World · Discovery</span>
               <h3><a href="work/digital-coaching/">Exploring digital coaching for weight management</a></h3>
-              <p>Should online members get AI-powered coaching? Support data, a cancellation survey and four competitor apps, turned into opportunities and concept wireframes for the business.</p>
+              <p>Should online members get AI-powered coaching? Support data, a cancellation survey and competitor apps, turned into a recommendation and concept wireframes.</p>
               <ul class="chips" aria-label="Disciplines">
-                <li class="chip">Discovery</li><li class="chip">UX design</li>
+                <li class="chip">Discovery</li><li class="chip">Data analysis</li><li class="chip">UX design</li>
               </ul>
-              <span class="project-cta" aria-hidden="true">Read case study <span class="arrow">→</span></span>
+              <ul class="project-stats" aria-label="Project facts">
+                <li><strong>3 weeks</strong> Discovery</li>
+                <li><strong>4</strong> Competitor apps analysed</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn" href="work/digital-coaching/">View case study<span class="visually-hidden">: digital coaching</span></a>
+              </div>
             </div>
-            <div class="project-media">
+            <a class="project-media" href="work/digital-coaching/" tabindex="-1" aria-hidden="true">
               <picture>
                 <source media="(max-width: 860px)" srcset="assets/img/home-sw-coaching-mobile.webp" width="1200" height="1170">
-                <img src="assets/img/home-sw-coaching.webp" width="1800" height="1272" loading="lazy" alt="Two phone screens showing a personalised support chat and a coaching session booking flow.">
+                <img src="assets/img/home-sw-coaching.webp" width="1800" height="1272" loading="lazy" alt="">
               </picture>
-            </div>
+            </a>
           </li>
 
           <li class="project project--gym reveal">
             <div class="project-body">
               <span class="eyebrow">Side project</span>
               <h3><a href="work/gym-tracker/">Gym Tracker: a workout log designed for the middle of a set</a></h3>
-              <p>I swapped my workout spreadsheet for an app of my own, designed with AI as a design partner. It tracks progressive overload and runs, and it now lives on my phone's home screen.</p>
+              <p>I swapped my workout spreadsheet for an app of my own, designed with AI as a design partner. It tracks progressive overload and runs, and lives on my phone&rsquo;s home screen.</p>
               <ul class="chips" aria-label="Disciplines">
                 <li class="chip">UX/UI design</li><li class="chip">AI-assisted design</li>
               </ul>
-              <span class="project-cta" aria-hidden="true">View project <span class="arrow">→</span></span>
+              <div class="project-actions">
+                <a class="btn" href="work/gym-tracker/">View project<span class="visually-hidden">: Gym Tracker</span></a>
+              </div>
             </div>
-            <div class="project-media">
+            <a class="project-media" href="work/gym-tracker/" tabindex="-1" aria-hidden="true">
               <picture>
                 <source media="(max-width: 860px)" srcset="assets/img/home-gym-mobile.webp" width="1200" height="1170">
-                <img src="assets/img/home-gym.webp" width="1800" height="1272" loading="lazy" alt="Three dark Gym Tracker phone screens: today's workout, an active set showing 12 reps at 140 kg, and the workout summary with next week's targets.">
+                <img src="assets/img/home-gym.webp" width="1800" height="1272" loading="lazy" alt="">
               </picture>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -148,7 +158,7 @@
     <section class="section" style="padding-top:0" aria-labelledby="approach-title">
       <div class="wrap">
         <div class="section-head reveal">
-          <h2 id="approach-title">How I <em>work</em></h2>
+          <h2 id="approach-title">How I work</h2>
         </div>
         <ol class="approach">
           <li class="reveal">
@@ -173,42 +183,42 @@
     <section class="section" style="padding-top:0" aria-labelledby="sites-title">
       <div class="wrap">
         <div class="section-head reveal">
-          <h2 id="sites-title">Websites <em>I've built</em></h2>
+          <h2 id="sites-title">Websites I've built</h2>
         </div>
         <ul class="sites">
           <li class="site reveal">
             <div class="site-media"><img src="assets/img/site-cakesheds.webp" width="1200" height="900" loading="lazy" alt="CakeSheds finder: a map of Derby with cake shed pins, beside search filters and a list of nearby cake sheds."></div>
             <h3>CakeSheds</h3>
             <p>Designing and developing the CakeSheds local finder.</p>
-            <ul class="chips"><li class="chip chip--design">UX/UI design</li></ul>
+            <ul class="chips"><li class="chip">UX/UI design</li></ul>
             <a class="site-cta" href="https://www.cakesheds.com/search" target="_blank" rel="noopener">See website <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden">: CakeSheds (opens in a new tab)</span></a>
           </li>
           <li class="site reveal" style="--d:.08s">
             <div class="site-media"><img src="assets/img/site-dev-portfolio.webp" width="1200" height="900" loading="lazy" alt="Dark-themed developer portfolio homepage with a portrait, a 'Hi, I'm Mark' intro and skills cards."></div>
             <h3>Developer Portfolio</h3>
             <p>Designing and developing a single page portfolio website for a developer.</p>
-            <ul class="chips"><li class="chip chip--design">UX/UI design</li><li class="chip chip--tool">Wix</li></ul>
+            <ul class="chips"><li class="chip">UX/UI design</li><li class="chip">Wix</li></ul>
             <a class="site-cta" href="https://percytechnology.wixstudio.com/markpercy" target="_blank" rel="noopener">See website <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden">: Developer Portfolio (opens in a new tab)</span></a>
           </li>
           <li class="site reveal">
             <div class="site-media"><img src="assets/img/site-two-dolphins.webp" width="1200" height="900" loading="lazy" alt="The Two Dolphins guesthouse homepage: the guesthouse name over an aerial view of the Breede River, with a 'What are you planning?' panel below."></div>
             <h3>The Two Dolphins</h3>
             <p>Designing and developing the website for a guesthouse in South Africa.</p>
-            <ul class="chips"><li class="chip chip--design">UX/UI design</li><li class="chip chip--dev">Front-end dev</li></ul>
+            <ul class="chips"><li class="chip">UX/UI design</li><li class="chip">Front-end dev</li></ul>
             <a class="site-cta" href="https://www.twodolphinsguesthouse.com/" target="_blank" rel="noopener">See website <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden">: The Two Dolphins (opens in a new tab)</span></a>
           </li>
           <li class="site reveal" style="--d:.08s">
             <div class="site-media"><img src="assets/img/site-reuseabook.webp" width="1200" height="900" loading="lazy" alt="Reuseabook online bookshop homepage with a 4FOR3 offer banner and a row of bestselling books."></div>
             <h3>Reuseabook</h3>
             <p>Redesigning and developing an e-commerce platform for used books.</p>
-            <ul class="chips"><li class="chip chip--research">Research</li><li class="chip chip--tool">Shopify</li><li class="chip chip--dev">Front-end dev</li></ul>
+            <ul class="chips"><li class="chip">Research</li><li class="chip">Shopify</li><li class="chip">Front-end dev</li></ul>
             <a class="site-cta" href="https://reuseabook.com/" target="_blank" rel="noopener">See website <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden">: Reuseabook (opens in a new tab)</span></a>
           </li>
           <li class="site reveal" style="--d:.16s">
             <div class="site-media"><img src="assets/img/site-marvel.webp" width="1200" height="900" loading="lazy" alt="At Home with Marvel care company homepage: 'Providing person centered care' over a photo of a smiling older woman."></div>
             <h3>At Home with Marvel</h3>
             <p>Redesigning and developing a single page website for a care company.</p>
-            <ul class="chips"><li class="chip chip--design">UX/UI design</li><li class="chip chip--tool">Wix</li></ul>
+            <ul class="chips"><li class="chip">UX/UI design</li><li class="chip">Wix</li></ul>
             <a class="site-cta" href="https://www.athomewithmarvel.com/" target="_blank" rel="noopener">See website <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden">: At Home with Marvel (opens in a new tab)</span></a>
           </li>
         </ul>
@@ -217,7 +227,7 @@
 
     <section class="contact" aria-labelledby="contact-title">
       <div class="wrap reveal">
-        <h2 id="contact-title">Let's <em>connect!</em></h2>
+        <h2 id="contact-title">Let's work together</h2>
         <div class="hero-actions">
           <a class="btn" href="https://www.linkedin.com/in/michelle-percy-developer" target="_blank" rel="noopener">Say hello on LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
           <a class="btn btn--ghost" href="assets/docs/michelle-percy-resume.pdf" target="_blank" rel="noopener">View my resume<span class="visually-hidden"> (opens in a new tab)</span></a>
